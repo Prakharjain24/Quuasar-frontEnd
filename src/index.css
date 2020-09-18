@@ -1,13 +1,88 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+      monospace;
+  }
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+  
+  *{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .navbar{
+    background-color: transparent !important;
+    border: none;
+    color: white;
+    z-index: 100;
+  }
+  .navbar-brand img{
+    padding-top: 20px;
+    padding-left: 30px;
+    width: 210px;
+    height: 50px;
+  }
+
+  /* Home background image  */
+ 
+.heading h1{
+  color: #fff;
+  font-size: 86px;
+  font-weight: bold;
+  /* text-align: center; */
+  vertical-align: bottom;
+  padding-left: 144px;
+  padding-top: 350px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.heading p{
+  color: #fff;
+  font-size: 33px;
+  font-style: normal;
+  /* text-align: center; */
+  padding-left: 229px;
+}
+.main-content-home{
+  width: 1180px;
+  position: absolute;
+  /* border: 1px solid red; */
+  top: 70%;
+  left: 45%;
+  transform: translate(-50%,-50%);
+}
+.main-content-home h1{
+  color: #fff;
+  font-size: 86px;
+  font-weight: bold;
+}
+.main-content-home p{
+  padding-top: 10px;
+  color: #fff;
+  font-size: 33px;
+  font-style: normal;
+}
+
+/* ////////////  Responsive Queries   ////////// */
+
+@media only screen and (max-width: 1180px){
+  .main-content-home{
+    width: 100%;
+    padding: 0 2%;
+  }
+}
+@media only screen and (max-width: 998px){
+  .main-content-home h1,p{
+    font-size: 150%;
+  }
+  .main-content-home p{
+    font-size: 100%;
+  }
 }

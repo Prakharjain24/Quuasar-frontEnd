@@ -1,61 +1,12 @@
 import React from 'react';
+import './style';
 import { Grid } from '@material-ui/core';
-import styled from "@emotion/styled";
-import facebookicon from '../images/Footer/facebookicon.png';
-import instaicon from '../images/Footer/instaicon.png';
-import linkedinicon from '../images/Footer/linkedinicon.png';
-import twittericon from '../images/Footer/twittericon.png';
-import footerBgImg from '../images/Footer/footerbgrectangle.png';
-import brandlogoBottom from '../images/Footer/brandLogo.png';
-
-const StyledFooter = styled(Grid)`
-    background-image: url(${footerBgImg});
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    height: 163px;
-    width: 1920px;
-    .footerbg{
-        padding-top: 129px;
-    }
-    .footerText{
-    padding-top: 22px;
-    padding-left: 144px;
-    font-size: 24px;
-    font-weight: bold;
-    color:#fff;
-    }
-    .facebook-icon{
-        width:34px;
-        height:34px;
-        padding-top: 22px;
-        padding-left: 144px;
-    }
-    .linkedin-icon{
-        width:34px;
-        height:34px;
-        padding-top: 22px;
-        padding-left: 22px;
-    }
-    .insta-icon{
-        width:34px;
-        height:34px;
-        padding-top: 22px;
-        padding-left: 22px;
-    }
-    .twitter-icon{
-        width:34px;
-        height:34px;
-        padding-top: 22px;
-        padding-left: 22px;
-    }
-    .logoBottom{
-        width: 273px;
-        height: 41px;
-        padding-right:144px;
-    }
-    }
-    `;
+import facebookicon from '../../images/Website Layout/Landing page assets/facebook-icon.png';
+import instaicon from '../../images/Website Layout/Landing page assets/insta-icon.png';
+import linkedinicon from '../../images/Website Layout/Landing page assets/linkin-icon.png';
+import twittericon from '../../images/Website Layout/Landing page assets/twitter-icon.png';
+import brandlogoBottom from '../../images/Website Layout/Landing page assets/brandLogo.png'
+import { StyledFooter } from './style';
 
 const FooterSection = () => {
     return (

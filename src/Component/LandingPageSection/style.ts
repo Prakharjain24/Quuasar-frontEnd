@@ -1,59 +1,57 @@
 import { Grid } from '@material-ui/core';
 import styled from "@emotion/styled";
-import Image from '../images/Backgroundimage.png';
+import Image from '../../images/Website Layout/Landing page assets/Backgroundimage.png';
 
-const StyledHeader = styled(Grid)`
+export const StyledHeader = styled(Grid)`
+height: 80px;
+
 .Styled-Brand-Logo{
-    padding-top: 46px;
-    padding-left: 144px;
-    width: 210px;
-    height: 31px;
+    width: 160px;
+    height: 25px;
     }
-
-    .Styled-Join-us{
-    padding-top: 46px;
-    padding-right: 144px;
-    font-size: 22px;
-    width: 80px;
+.Styled-Join-us{
+    font-size: 18px;
+    // width: 80px;
     color: #fff;
     font-weight: bold;
-    text-decoration: none;
     }
+.Styled-Join-us:hover{
+    color: #fff;
+    border-bottom: 2px solid #fff;
+}
+.joinus-border:hover{
+    border-bottom: 2px solid #fff;
+    // border-bottom-style:solid;
+    // border-bottom-width:thin;
+}
 `;
-
-const StyledHome = styled(Grid)`
+ 
+export const StyledHome = styled(Grid)`
     background-image: url(${Image});
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
     height: 100vh;
     width: 100%;
+    font-family: 'Montserrat-bold' !important;
+
+    .paragraphWrapper{
+        height: 82%;
+    }
 
     .heading1{
-    padding-top: 300px;
-    padding-left:144px;
     color: #fff;
-    font-size: 86px;
-    font-weight: bold;
+    font-size: 50px;
     }
     .heading2{
-    padding-left:144px;
     color: #fff;
-    font-size: 86px;
-    font-weight: bold;
+    font-size: 50px;
+    margin-top: -10px; 
     }
-    .paragraph1{
+    .paragraph{
     color: #fff;
-    font-size: 33px;
-    padding-top: 10px;
-    font-style: normal;
-    padding-left:144px;
-    }
-    .paragraph2{
-    color: #fff;
-    font-size: 33px;
-    font-style: normal;
-    padding-left:144px;
+    font-size: 20px;
+    padding-top: 20px;
     }
 
     @media only screen and (max-width: 1920px){

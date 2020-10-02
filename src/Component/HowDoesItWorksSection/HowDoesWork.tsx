@@ -1,21 +1,7 @@
 import { Grid } from '@material-ui/core';
 import React from 'react';
-import styled from "@emotion/styled";
-import workFlow from '../images/HowDoesItWork/how-does-it-work.gif';
-
-const StyledWork = styled(Grid)`
-text-align:center;
-.worksHeader{
-    padding-top: 62px;
-    font-size: 68px;
-    color:#0D2767;
-}
-.StyledImg{
-    padding-top: 139px;
-    width: 1280px;
-    height: 720px;
-}
-`;
+import workFlow from '../../images/Website Layout/Landing page assets/How-does-it-work.gif';
+import { StyledWork } from './style';
 
 const HowDoesItWork = () => {
     return (

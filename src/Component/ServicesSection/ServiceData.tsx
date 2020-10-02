@@ -1,15 +1,15 @@
-import architect from '../images/Service-section-icons/Architect-icon.png';
-import interiorDesigner from '../images/Service-section-icons/Interior-icon.png'
-import contractor from '../images/Service-section-icons/Contractor-icon.png'
-import civilEngineer from '../images/Service-section-icons/civil-eng-icon.png'
-import fabricator from '../images/Service-section-icons/Fabricator-icon.png'
-import modularKitchen from '../images/Service-section-icons/Modular-kitchen-icon.png'
-import constructionCompanies from '../images/Service-section-icons/Contruction-co-icon.png'
-import electricians from '../images/Service-section-icons/Electrician-icon.png'
-import plumbers from '../images/Service-section-icons/Plumber-icon.png'
-import painters from '../images/Service-section-icons/Painters-icon.png'
-import carpenters from '../images/Service-section-icons/Carpenter-icon.png'
-import rightSideAngleIcon from '../images/Service-section-icons/More-icon.png'
+import architect from '../../images/Website Layout/Landing page assets/Architect-icon.png';
+import interiorDesigner from '../../images/Website Layout/Landing page assets/Interior-icon.png'
+import contractor from '../../images/Website Layout/Landing page assets/Contractor-icon.png'
+import civilEngineer from '../../images/Website Layout/Landing page assets/Civil-eng-icon.png'
+import fabricator from '../../images/Website Layout/Landing page assets/Fabricator-icon.png'
+import modularKitchen from '../../images/Website Layout/Landing page assets/Modular-kitchen-icon.png'
+import constructionCompanies from '../../images/Website Layout/Landing page assets/Contruction-co-icon.png'
+import electricians from '../../images/Website Layout/Landing page assets/Electrician-icon.png'
+import plumbers from '../../images/Website Layout/Landing page assets/Plumber-icon.png'
+import painters from '../../images/Website Layout/Landing page assets/Painters-icon.png'
+import carpenters from '../../images/Website Layout/Landing page assets/Carpenter-icon.png'
+import rightSideAngleIcon from '../../images/Website Layout/Landing page assets/More-icon.png'
  
 const ServiceData = {
     architech : {

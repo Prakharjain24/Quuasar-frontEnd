@@ -1,16 +1,21 @@
 import React from 'react';
 import Home from './Component/LandingPageSection/Home';
+import Loginpage from './Component/LoginPageSection/Loginpage';
+import Joinus from './Component/LoginPageSection/Joinus';
 import Daytona from '../src/Component/Daytona';
+
 import { Switch, Route, Redirect } from "react-router-dom";
 const App = () => {
     return (
         <React.Fragment>
             <Switch>
-                <Route exact path='/' component={Home} />
-                {/* <Route path='/login' component={LoginPage} /> */}
+                <Route exact path='/' strict component={Daytona} />
+                <Route path='/login' component={Loginpage} />
                 <Redirect to='/' />
             </Switch>
-            <Daytona />
+            {/* <Daytona /> */}
+            {/* <Loginpage /> */}
+            {/* <Joinus /> */}
         </React.Fragment>
     );
 }; 

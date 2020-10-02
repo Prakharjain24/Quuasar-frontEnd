@@ -1,8 +1,8 @@
 import { Grid } from '@material-ui/core';
 import styled from "@emotion/styled";
-import footerBgImg from '../images/Footer/footerbgrectangle.png';
+import footerBgImg from '../../images/Website Layout/Landing page assets/footer-bg-rectangle.png'
 
-const StyledFooter = styled(Grid)`
+export const StyledFooter = styled(Grid)`
     background-image: url(${footerBgImg});
     background-size: cover;
     background-position: center center;
@@ -25,11 +25,19 @@ const StyledFooter = styled(Grid)`
         padding-top: 22px;
         padding-left: 144px;
     }
+    .facebook-icon:hover{
+        background-color: #0D2767;
+        color: #fff;
+    }
     .linkedin-icon{
         width:34px;
         height:34px;
         padding-top: 22px;
         padding-left: 22px;
+    }
+    .linkedin-icon:hover{
+        background-color: grey;
+        color: #fff;
     }
     .insta-icon{
         width:34px;

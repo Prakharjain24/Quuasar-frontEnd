@@ -1,7 +1,7 @@
 import { Grid } from '@material-ui/core';
 import styled from "@emotion/styled";
 
-const StyledWork = styled(Grid)`
+export const StyledWork = styled(Grid)`
 text-align:center;
 .worksHeader{
     padding-top: 62px;

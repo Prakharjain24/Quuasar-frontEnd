@@ -18,7 +18,7 @@ const Home = () => {
         <StyledHome container direction="column" wrap="nowrap">
         <Header />
         <Grid container item alignItems="flex-end" justify="center" className="paragraphWrapper">
-            <Grid item xs={11}>
+            <Grid item lg={11}>
                 <Grid className="heading1">Build relationships,</Grid>
                 <Grid className="heading2">while building home</Grid>
                 <Grid container direction="column" className="paragraph">

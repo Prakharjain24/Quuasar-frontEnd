@@ -11,45 +11,36 @@ function useQuery() {
 }
 
 const Loginpage = () => {
-    // let query = useQuery();
-    // console.log("hello : ",query.get("select"));
 
-    // const [clientStatus, setClientStatus] = useState(false);
-    // const [professionalStatus, setProfessionalStatus] = useState(false);
-    const [selectedUserType, setSelectedUserType] = useState('client');
+    let byClient = false;
+    let query = useQuery();
+    const [ selectUserType, setSelectUserType] = useState('client');
     
     const clientContent = () => {
-        setSelectedUserType('client')
+        setSelectUserType('client');
     }
     const professionalContent = () => {
-        setSelectedUserType('professional');
+        setSelectUserType('professional');
     }
 
-
-    let query = useQuery();
     useEffect(() => {
         let choice = query.get('select');
         switch (choice) {
             case 'client': {
-                // document.getElementById("clientid")?.onselect={clientStatus} ;
+                byClient = true;
                 var btn = document.getElementById("clientid");
                 if (btn != null) {
-                    setSelectedUserType('client')
+                    setSelectUserType('client')
                     btn.style.backgroundColor = '#0D2767';
-                    btn.style.color = '#fff';
-
-                    // btn.onclick={clientContent};
-                    // {btn == clientStatus}
-                    // {btn.onselect=clientStatus;}
-                    // if
-                    // btn.style.visibility="visible";   
+                    btn.style.color = '#fff'; 
                 }
                 break;
             }
             case 'professional': {
+                byClient = false;
                 var btn = document.getElementById("professionalid");
                 if (btn != null) {
-                    setSelectedUserType('professional');
+                    setSelectUserType('professional');
                     btn.style.backgroundColor = '#0D2767';
                     btn.style.color = '#fff';
                 }
@@ -126,8 +117,6 @@ const Loginpage = () => {
 
                 <StyledRightGrid container xs={4} direction="column" justify="flex-start" alignItems="center">
                     <Grid container xs={8} direction="column" justify="center" alignItems="center">
-                        {/* <form onSubmit={registeredContent}> */}
-                            {/* {registeredStatus && <Registered setModalIsOpen={setRegisteredStatus} modalIsOpen={registeredStatus} />} */}
                             <Grid container
                                 direction="column"
                                 justify="center"
@@ -179,7 +168,6 @@ const Loginpage = () => {
                                     {registeredStatus && <Registered setModalIsOpen={setRegisteredStatus} modalIsOpen={registeredStatus} />}
                                 </Grid>
                             </Grid>
-                        {/* </form> */}
                     </Grid>
                 </StyledRightGrid>
             </Grid>

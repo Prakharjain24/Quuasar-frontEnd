@@ -18,15 +18,16 @@ text-align:center;
 //     width:64px;
 // }
 .Styled-icon-title{
-    font-size: 25px;
-    padding-top: 24px;
+    font-size: 23px;
+    padding-top: 20px;
 }
-.icon-line1{
-    padding-top: 56px;
-}
+// .icon-line1{
+//     padding-top: 56px;
+// }
 .icon-line2{
     padding-top: 90px;
 }
+.icon-line
 `;
 
 export const StyledServicesGrid = styled(Grid)`

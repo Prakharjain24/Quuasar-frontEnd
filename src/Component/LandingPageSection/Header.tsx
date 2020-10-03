@@ -34,11 +34,11 @@ const Header = () => {
             </StyledHeader>  */} 
 
             <StyledHeader container direction="row">
-                <Grid container item xs={3} alignItems="center" justify="center">
+                <Grid container item lg={3} alignItems="center" justify="center">
                     <NavLink to="/"><img className="Styled-Brand-Logo" src={brandLogo} alt="brandLogo" /></NavLink>
                 </Grid>
-                <Grid container item xs={9} alignItems="center" justify="flex-end">
-                    <Grid container item xs={3} alignItems="center" justify="center">
+                <Grid container item lg={9} alignItems="center" justify="flex-end">
+                    <Grid container item lg={3} alignItems="center" justify="center">
                         {/* <NavLink to={joinusContent} ><Grid className="Styled-Join-us" >Join us</Grid></NavLink> */}
                         <Grid className="Styled-Join-us"><span className="joinus-border" onClick={joinusContent} >Join us</span></Grid>
                         {joinus && <Joinus setModalIsOpen={setJoinus} modalIsOpen={joinus}/>}

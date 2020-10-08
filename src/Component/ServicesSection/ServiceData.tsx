@@ -58,7 +58,7 @@ const ServiceData = {
     },
     rightSideAngleIcon : {
         imgsrc : rightSideAngleIcon,
-        title : 'Right Side Angle Icon',
+        title : 'and more...',
     },
 }
 export default ServiceData;

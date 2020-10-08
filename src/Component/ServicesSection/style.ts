@@ -5,21 +5,25 @@ export const StyledApp = styled(Grid)`
 text-align:center;
 // padding-top: 239px;
 .servicesHeader{
-    padding-top:100px;
-    font-size: 68px;
+    padding-top:93px;
+    font-size: 45px;
+    font-weight: 200;
     color:#0D2767;
 }
-.servicesGrid{
-    padding-left: 300px;
-    padding-right: 300px;
+.servicesHeaderMob{
+    font-size : 30px; 
+    padding-top : 50px;
+    font-weight: 200;
+    color:#0D2767;
 }
-// .servicesImage{
-//     height:83px; 
-//     width:64px;
-// }
 .Styled-icon-title{
-    font-size: 23px;
-    padding-top: 20px;
+    font-size: 16px;
+    padding-top: 13px;
+}
+.Styled-icon-title-mob{
+    font-size: 16px;
+    padding-top: 10px;
+    padding-bottom: 25px;
 }
 // .icon-line1{
 //     padding-top: 56px;
@@ -27,9 +31,14 @@ text-align:center;
 .icon-line2{
     padding-top: 90px;
 }
-.icon-line
 `;
 
 export const StyledServicesGrid = styled(Grid)`
-padding:112px 60px;
+// .servicesGrid{
+//     padding: 75px 0px;
+// }
+// .servicesGridMob{
+//     padding: 53px 0px;
+// }
+padding: 58px 0px;
 `;

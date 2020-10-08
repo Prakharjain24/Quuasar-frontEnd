@@ -6,21 +6,40 @@ import ClientImage from '../../images/Website Layout/Landing page assets/client.
 import ProfessionalImage from '../../images/Website Layout/Landing page assets/professional.png';
 import Modal from 'react-modal';
 import Loginpage from './Loginpage';
+import useMediaQuery from '@material-ui/core/useMediaQuery';
+import { useTheme } from '@material-ui/core/styles'
 
 const StyledModal = styled(Grid)`
     .Styled-joinus-button{
-    width: 270px;
-    height: 53px;
-    border: 2px solid;
-    border-radius: 2rem 2rem 2rem 2rem;
-    font-size: 21px;
-    font-weight: bold;
-    border-color: #0D2767;
-    margin-top: 50px;
+    width: 185px;
+    height: 38px;
+    border: 2px solid rgb(13, 39, 103);
+    border-radius: 2rem;
+    font-family: Montserrat, sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 35px;
     text-transform: none;
     cursor: pointer;
-    display: inline-block;
+    background-color: rgb(13, 39, 103);
+    color: rgb(255, 255, 255);
+    text-decoration: none;
     }
+    .Styled-joinus-btn-mob{
+        width: 120px;
+        height: 29px;
+        border: 2px solid rgb(13, 39, 103);
+        border-radius: 2rem;
+        font-family: Montserrat, sans-serif;
+        font-size: 12px;
+        font-weight: 600;
+        margin-top: 17px;
+        text-transform: none;
+        cursor: pointer;
+        background-color: rgb(13, 39, 103);
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        }
     .Styled-joinus-button:hover{
         background-color: #0D2767;
         color: #fff;
@@ -32,86 +51,171 @@ const StyledModal = styled(Grid)`
 `;
 const StyledClientGrid = styled(Grid)`
 .client{
-    width: 193px;
-    height: 188px;
+    width: 160px;
+    height: 155px;
 }
+// .client-mob{
+//     width: 10px;
+//     height: 10px;
+// }
 `;
 const StyledProfessionalGrid = styled(Grid)`
 .professional{
-    width: 193px;
-    height: 188px;
+    width: 160px;
+    height: 155px;
 }
+// .professional-mob{
+//     width: 10px;
+//     height: 10px;
+// }
 `;
 
 Modal.setAppElement('#root')
 const Joinus = (props) => {
-   
+    const theme = useTheme();
+    const matches = useMediaQuery(theme.breakpoints.down('xs'));
     return (
         <React.Fragment>
             <Grid className='App'>
                 <Grid className="gridCall">
-                    <Modal
-                        id="id01"
-                        isOpen={props.modalIsOpen}
-                        onRequestClose={() => props.setModalIsOpen(false)}
-                        style={{
-                            overlay: {
-                                position: 'fixed',
-                                backgroundColor: 'rgba(0,0,0, 0.7)'
-                            },
-                            content: {
-                                position: 'absolute',
-                                left: '50%',
-                                top: '50%',
-                                transform: 'translate(-50%, -50%)',
-                                width: '650px',
-                                height: '300px',
-                                border: '1px solid #ccc',
-                                background: '#fff',
-                                overflow: 'hidden',
-                                WebkitOverflowScrolling: 'touch',
-                                borderRadius: '40px',
-                                outline: 'none',
-                                padding: '20px'
-                            }
-                        }}
-                    >
-                        <StyledModal container xs={12}>
-                            <StyledClientGrid item container xs={6} direction="column" justify="center" alignItems="center">
-                                <Grid container direction="column" justify="center" alignItems="center">
-                                    <Grid className="client"><img src={ClientImage} alt="Client Image" /></Grid>
-                                    <Grid container direction="column" justify="center" alignItems="center">
-                                        <NavLink to="/login?select=client">
-                                            <Button
-                                                className="Styled-joinus-button"
-                                                variant="outlined"
-                                                disableRipple
-                                                disableFocusRipple
-                                            >Client
-                                        </Button>
-                                        </NavLink>
-                                    </Grid>
-                                </Grid>
-                            </StyledClientGrid>
+                    {matches ? (
+                        <>
+                            <Modal
+                                id="id01"
+                                isOpen={props.modalIsOpen}
+                                onRequestClose={() => props.setModalIsOpen(false)}
+                                style={{
+                                    overlay: {
+                                        position: 'fixed',
+                                        backgroundColor: 'rgba(0,0,0, 0.7)'
+                                    },
+                                    content: {
+                                        position: 'absolute',
+                                        left: '49%',
+                                        top: '30%',
+                                        transform: 'translate(-50%, -50%)',
+                                        width: '280px',
+                                        height: '140px',
+                                        border: '1px solid #ccc',
+                                        background: '#fff',
+                                        overflow: 'hidden',
+                                        WebkitOverflowScrolling: 'touch',
+                                        borderRadius: '40px',
+                                        outline: 'none',
+                                        padding: '20px'
+                                    }
+                                }}
+                            >
+                                <StyledModal container xs={12}>
+                                    <StyledClientGrid item container xs={6} direction="column" justify="center" alignItems="center">
+                                        <Grid container direction="column" justify="center" alignItems="center">
+                                            <Grid container direction="column" justify="center" alignItems="center" className="client-mob">
+                                                <img src={ClientImage} alt="Client Image" style={{ width:"100px", height:"100px"}} />
+                                                </Grid>
+                                            <Grid container direction="column" justify="center" alignItems="center">
+                                                <NavLink to="/login?select=client">
+                                                    <Button
+                                                        className="Styled-joinus-btn-mob"
+                                                        variant="outlined"
+                                                        disableRipple
+                                                        disableFocusRipple
+                                                    >Client
+                                                    </Button>
+                                                </NavLink>
+                                            </Grid>
+                                        </Grid>
+                                    </StyledClientGrid>
 
-                            <StyledProfessionalGrid item container xs={6} direction="column" justify="center" alignItems="center">
-                                <Grid container direction="column" justify="center" alignItems="center">
-                                    <Grid className="professional"><img src={ProfessionalImage} alt="Client Image" /></Grid>
-                                    <Grid container direction="column" justify="center" alignItems="center">
-                                        <NavLink to="/login/?select=professional" >
-                                            <Button
-                                                className="Styled-joinus-button"
-                                                variant="outlined"
-                                                disableRipple
-                                                disableFocusRipple
-                                            >Professional
-                                        </Button>
-                                        </NavLink>
-                                    </Grid>
-                                </Grid>
-                            </StyledProfessionalGrid>
-                        </StyledModal>
-                    </Modal>
+                                    <StyledProfessionalGrid item container xs={6} direction="column" justify="center" alignItems="center">
+                                        <Grid container direction="column" justify="center" alignItems="center">
+                                            <Grid container direction="column" justify="center" alignItems="center" className="professional-mob">
+                                                <img src={ProfessionalImage} alt="Client Image" style={{ width:"100px", height:"100px"}}/>
+                                                </Grid>
+                                            <Grid container direction="column" justify="center" alignItems="center">
+                                                <NavLink to="/login/?select=professional" >
+                                                    <Button
+                                                        className="Styled-joinus-btn-mob"
+                                                        variant="outlined"
+                                                        disableRipple
+                                                        disableFocusRipple
+                                                    >Professional
+                                                    </Button>
+                                                </NavLink>
+                                            </Grid>
+                                        </Grid>
+                                    </StyledProfessionalGrid>
+                                </StyledModal>
+                            </Modal>
+                        </>
+                    ) : (
+                            <>
+                                <Modal
+                                    id="id01"
+                                    isOpen={props.modalIsOpen}
+                                    onRequestClose={() => props.setModalIsOpen(false)}
+                                    style={{
+                                        overlay: {
+                                            position: 'fixed',
+                                            backgroundColor: 'rgba(0,0,0, 0.7)'
+                                        },
+                                        content: {
+                                            position: 'absolute',
+                                            left: '50%',
+                                            top: '50%',
+                                            right: '40px',
+                                            bottom: '40px',
+                                            transform: 'translate(-50%, -50%)',
+                                            width: '520px',
+                                            height: '250px',
+                                            border: '1px solid #ccc',
+                                            background: '#fff',
+                                            overflow: 'hidden',
+                                            WebkitOverflowScrolling: 'touch',
+                                            borderRadius: '40px',
+                                            outline: 'none',
+                                            padding: '20px'
+                                        }
+                                    }}
+                                >
+                                    <StyledModal container xs={12}>
+                                        <StyledClientGrid item container xs={6} direction="column" justify="center" alignItems="center">
+                                            <Grid container direction="column" justify="center" alignItems="center">
+                                                <Grid className="client"><img src={ClientImage} alt="Client Image" /></Grid>
+                                                <Grid container direction="column" justify="center" alignItems="center">
+                                                    <NavLink to="/login?select=client">
+                                                        <Button
+                                                            className="Styled-joinus-button"
+                                                            variant="outlined"
+                                                            disableRipple
+                                                            disableFocusRipple
+                                                        >Client
+                                                        </Button>
+                                                    </NavLink>
+                                                </Grid>
+                                            </Grid>
+                                        </StyledClientGrid>
+
+                                        <StyledProfessionalGrid item container xs={6} direction="column" justify="center" alignItems="center">
+                                            <Grid container direction="column" justify="center" alignItems="center">
+                                                <Grid className="professional"><img src={ProfessionalImage} alt="Client Image" /></Grid>
+                                                <Grid container direction="column" justify="center" alignItems="center">
+                                                    <NavLink to="/login/?select=professional" >
+                                                        <Button
+                                                            className="Styled-joinus-button"
+                                                            variant="outlined"
+                                                            disableRipple
+                                                            disableFocusRipple
+                                                        >Professional
+                                                        </Button>
+                                                    </NavLink>
+                                                </Grid>
+                                            </Grid>
+                                        </StyledProfessionalGrid>
+                                    </StyledModal>
+                                </Modal>
+                            </>
+                        )
+                    }
                 </Grid>
             </Grid>
         </React.Fragment>

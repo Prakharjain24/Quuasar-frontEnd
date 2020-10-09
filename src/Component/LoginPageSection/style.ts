@@ -163,64 +163,53 @@ width: 100%;
 //////////////// Loginpage //////////////////////
 
 export const StyledLeftGrid = styled(Grid)`
-    // background-color: lightgreen;
     height: 100vh;
     background-image: url(${painting});
     background-size: cover;
     background-position: right bottom;
     background-repeat: no-repeat;
-    background-size: 50px 50px;
+    // background-size: 50px 50px;
+    background-size: 825px 294px;
 `;
 
 export const StyledHeaderLeftGrid = styled(Grid)`
     height: 80px;
-    // background-color: green;
-    .Styled-Brand-Logo{
+
+    .brandLogo{
         width: 160px;
         height: 25px;
     }
 `;
 
-export const StyledTitleLeftGrid = styled(Grid)`
-    height: 80vh;
-    // background-color: pink; 
-    .title1{
-        margin-left: 80px;
-        font-weight: bold;
+export const StyledContentLeftGrid = styled(Grid)`
+    height: 87%;
+
+    .title{
+        font-weight: 600;
         color: #283479;
-        font-size: 38px;
-        }
-    .paragraph{
-        margin-left: 80px;
-        font-weight: bold;
-        color: #29ABE2;
-        font-size: 75px;
-    } 
-`;
-
-export const StyledButtonLeftGrid = styled(Grid)`
-    height: 80%;
-    width: 200px;
-    heigh: 15px; 
-    // background-color: grey;
-
-    .Styled-on-button{
-    width: 350px;
-    height: 47px;
-    border: 2px solid;
-    border-radius: 2rem 0rem 0rem 2rem;
-    font-size: 21px;
-    font-weight: bold;
-    border-color: #0D2767;
-    border-right: 0;
-    margin-top: 50px;
-    text-transform: none;
-    cursor: pointer;
-    display: inline-block;
+        font-size: 29px;
+        padding-top: 30px;
     }
-    .Styled-on-button:hover{
-        background-color: #29ABE2;
-        color: #fff;
+    .paragraph{
+        font-weight: 300;
+        color: #29ABE2;
+        font-size: 63px;
+        padding-top: 20px;
+    }
+    .Styled-on-button{
+        width: 250px;
+        height: 43px;
+        border: 2px solid;
+        border-radius: 2rem 0rem 0rem 2rem;
+        border-color: #0D2767;
+        border-right: 0;
+        text-transform: none;
+        cursor: pointer;
+        display: inline-block;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 17px;
+        font-weight: 500;
+        margin-top: 30px;
     }
     button:focus{
         background-color: #0D2767;
@@ -233,38 +222,39 @@ export const StyledRightGrid = styled(Grid)`
     background-color: #0D2767;
     background-image: url(${croppedLogoIcon});
     background-size: cover;
-    background-position: right bottom; 
+    background-position: right bottom;
     background-repeat: no-repeat;
-    background-size: 400px 250px; 
+    background-size: 350px 230px;
 
-    .form-control{
-    width: 350px;
-    height: 40px;
-    border: 0px solid;
-    border-radius: 18px;
-    font-size: 22px;
-    font-style: italic;
-    margin-top: 18px;
-    outline: none;
+    .textFields{
+        width: 283px;
+        height: 30px;
+        border: 0px solid;
+        border-radius: 18px;
+        font-size: 17px;
+        font-style: italic;
+        margin-top: 18px;
+        outline: none;
     }
 
     .Styled-on-registered{
-    width: 350px;
-    height: 47px;
-    border: 0px solid;
-    border-radius: 50px;
-    font-size: 25px;
-    font-weight: bold;  
-    background-color: #29ABE2;
-    color: #fff;
-    margin-top: 45px;
-    text-transform: none;
+        width: 298px;
+        height: 40px;
+        border: 0px solid;
+        border-radius: 50px;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 18px;
+        font-weight: bold;
+        background-color: #29ABE2;
+        color: #fff;
+        margin-top: 45px;
+        text-transform: none;
     }
     .Styled-on-registered:hover{
         background-color: #29ABE2;
     }
-    .form-control::placeholder {
-        padding-left: 13px;
+    .textFields::placeholder {
+        color: #D3D3D3;
     }
     input{
         padding-left: 15px;
@@ -273,21 +263,23 @@ export const StyledRightGrid = styled(Grid)`
 
 ////////////////// Registered css /////////////////////
 
-export const StyledtextGrid = styled(Grid)`
+export const StyledModalPopUp = styled(Grid)`
+height: 100%;
 font-family: Montserrat, sans-serif;
 font-weight: 600;
+
  .message1{
      color: #29ABE2;
-     font-size: 45px;
+     font-size: 35px;
      padding-left: 30px;
  }
  .message2{
      color: #283479;
-     font-size: 45px;
+     font-size: 35px;
  }
  .paragraph{
-     font-size: 22px; 
-     padding-top: 10px;
+     font-size: 18px;
+     padding-top: 28px;
      padding-left: 30px;
  }
  .mess1-mob{
@@ -307,11 +299,10 @@ font-weight: 600;
     font-size: 11px; 
     padding-top: 25px;
 }
-`;
-export const StyledImageGrid = styled(Grid)`
+
  .checkoutImage{
-     width: 193px;
-     height: 188px;
+     width: 130px;
+     height: 125px;
  }
 //  .checkoutImg-mob{
 //     width: 25px;

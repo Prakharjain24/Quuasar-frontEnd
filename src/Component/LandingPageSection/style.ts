@@ -11,14 +11,16 @@ height: 80px;
 .Styled-Brand-Logo{
     width: 160px;
     height: 25px;
-    }
-.Styled-Join-us{
+}
+
+.joinUsLink{
     font-size: 18px;
-    // width: 80px;
     color: #fff;
     font-weight: bold;
-    }
-.Styled-Join-us:hover{
+    cursor: pointer;
+}
+
+.joinUsLink:hover{
     color: #fff;
     border-bottom: 2px solid #fff;
 }
@@ -93,7 +95,6 @@ export const StyledHome = styled(Grid)`
     background-repeat: no-repeat;
     height: 100vh;
     width: 100%;
-    font-family: 'Montserrat-bold' !important;
 
     .paragraphWrapper{
         height: 82%;
@@ -115,23 +116,24 @@ export const StyledHome = styled(Grid)`
         font-weight: bold; 
     }
     .paragraph{
-    color: #fff;
-    font-size: 20px;
-    padding-top: 20px;
+        color: #fff;
+        font-size: 20px;
+        padding-top: 20px;
+        font-weight: medium;
     }
 
     @media only screen and (max-width: 1920px){
-    .container{
-    width: 100%;
-    padding: 0 10%;
-    }
+        .container{
+            width: 100%;
+            padding: 0 10%;
+        }
     }
     @media only screen and (max-width: 998px){
-    .heading, .paragraph{
-        font-size: 200%;
-    }
-    .paragraph{
-        font-size: 100%;
-    }
+        .heading, .paragraph{
+            font-size: 200%;
+        }
+        .paragraph{
+            font-size: 100%;
+        }
     }
 `;

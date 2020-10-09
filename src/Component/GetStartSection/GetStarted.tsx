@@ -19,7 +19,7 @@ const GetStarted = () => {
             {matches ? (
                 <>
                     <StyledGetStart container item direction="column" justify="center" alignItems="center">
-                        <Grid container item justify="center" alignItems="center" className="get-header-mobile" style={{fontSize : "30px"}}>
+                        <Grid container item justify="center" alignItems="center" className="get-header-mobile" style={{ fontSize: "30px" }}>
                             Let's get started
                 </Grid>
                         <Grid container item direction="column" justify="center" alignItems="center" className="get-btn-mobile">
@@ -31,7 +31,7 @@ const GetStarted = () => {
                     </Button>
                             {joinus && <Joinus setModalIsOpen={setJoinus} modalIsOpen={joinus} />}
                         </Grid>
-                    </StyledGetStart> 
+                    </StyledGetStart>
                 </>
             ) : (
                     <>

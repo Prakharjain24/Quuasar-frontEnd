@@ -5,6 +5,7 @@ export const StyledGetStart = styled(Grid)`
 .getstartHeader{
     padding-top: 30px;
     font-size: 45px;
+    font-weight: 200;
     color:#0D2767;
 }
 .get-header-mobile{
@@ -27,7 +28,6 @@ export const StyledGetStart = styled(Grid)`
     font-size: 17px;
     font-weight: bold;
     color: rgb(13, 39, 103);
-    border-color: #0D2767;
     width: 110px;
     height: 56px;
     text-transform: none;

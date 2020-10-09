@@ -11,15 +11,15 @@ const HowDoesItWork = () => {
     const matches = useMediaQuery(theme.breakpoints.down('xs'));
 
     return (
-        <React.Fragment> 
+        <React.Fragment>
             {matches ? (
                 <>
                     <StyledWork container item direction="column" justify="center" alignItems="center">
-                        <Grid container item direction="column" justify="center" alignItems="center" className="worksHeader" style={{fontSize : "30px", paddingTop : "36px"}}>
+                        <Grid container item direction="column" justify="center" alignItems="center" className="worksHeader" style={{ fontSize: "30px", paddingTop: "36px" }}>
                             How does it work?
                         </Grid>
                         <Grid>
-                            <img className="StyledImg" src={workFlow} alt="HowDoesItWork" width="417px" height="400px" style={{paddingTop : "50px"}}/>
+                            <img className="StyledImg" src={workFlow} alt="HowDoesItWork" width="417px" height="400px" style={{ paddingTop: "50px" }} />
                         </Grid>
                     </StyledWork>
                 </>
@@ -28,9 +28,9 @@ const HowDoesItWork = () => {
                         <StyledWork container item direction="column" justify="center" alignItems="center">
                             <Grid container item justify="center" alignItems="center" className="worksHeader">
                                 How does it work?
-            </Grid>
+                            </Grid>
                             <Grid>
-                                <img className="StyledImg" src={workFlow} alt="HowDoesItWork" width="1280px" height="720px" />
+                                <img className="StyledImg" src={workFlow} alt="HowDoesItWork" srcSet={`${workFlow} 300w, ${workFlow} 768w, ${workFlow} 1280w, ${workFlow} 3200w`} />
                             </Grid>
                         </StyledWork>
                     </>
@@ -41,6 +41,13 @@ const HowDoesItWork = () => {
             </Grid>
                 <Grid>
                     <img className="StyledImg" src={workFlow} alt="HowDoesItWork" width="1351px" height="951px" />
+        <React.Fragment>
+            <StyledWork container direction="column" justify="center" alignItems="center">
+                <Grid container justify="center" alignItems="center" className="worksHeader">
+                    How does it work?
+                </Grid>
+                <Grid container justify="center" alignItems="center">
+                    
                 </Grid>
             </StyledWork> */}
         </React.Fragment>

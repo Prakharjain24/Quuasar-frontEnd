@@ -44,59 +44,32 @@ width: 100%;
 }
 `;
 export const StyledFooter = styled(Grid)`
-    // background-image: url(${footerBgImg});
-    background-color: #283479;
-    // background-size: cover;
-    // background-position: center center;
-    // background-repeat: no-repeat;
-    height: 163px;
+    background-image: url(${footerBgImg});
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 108px;
     width: 100%;
-    .footerbg{
-        padding-top: 129px;
-    }
-    .footerText{
-    padding-top: 22px;
-    padding-left: 144px;
-    font-size: 24px;
-    font-weight: bold;
     color:#fff;
+
+    .footerText{
+        font-size: 16px;
+        font-weight: 600;
+        padding: 10px 0px;
     }
-    .facebook-icon{
-        width:34px;
-        height:34px;
-        padding-top: 22px;
-        padding-left: 144px;
+    .socialSitesIcon{
+        width:22px;
+        height:22px;
+        cursor: pointer;
     }
     .facebook-icon:hover{
         background-color: #0D2767;
         color: #fff;
     }
-    .linkedin-icon{
-        width:34px;
-        height:34px;
-        padding-top: 22px;
-        padding-left: 22px;
-    }
-    .linkedin-icon:hover{
-        background-color: grey;
-        color: #fff;
-    }
-    .insta-icon{
-        width:34px;
-        height:34px;
-        padding-top: 22px;
-        padding-left: 22px;
-    }
-    .twitter-icon{
-        width:34px;
-        height:34px;
-        padding-top: 22px;
-        padding-left: 22px;
-    }
     .logoBottom{
-        width: 273px;
-        height: 41px;
-        padding-right:144px;
+        width: 182px;
+        height: 27px;
+        cursor: pointer;
     }
-    }
-    `;
+}
+`;

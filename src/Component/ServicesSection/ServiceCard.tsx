@@ -18,10 +18,10 @@ const ServiceCard = (props) => {
 
                             <Grid container xs={10} className="icon-img" direction="row" justify="space-around" alignItems="center">
                                 <Grid container item xs={4} className="icon-img" direction="column" justify="center" alignItems="center" >
-                                <img src={ServiceData.architech.imgsrc} alt="Architech icon" height="55px" width="42px" />
+                                    <img src={ServiceData.architech.imgsrc} alt="Architech icon" height="55px" width="42px" />
                                 </Grid>
                                 <Grid container item xs={4} className="icon-img" direction="column" justify="center" alignItems="center" >
-                                <img src={ServiceData.interiorDesigner.imgsrc} alt="Interior Designer icon" height="46px" width="45px" />
+                                    <img src={ServiceData.interiorDesigner.imgsrc} alt="Interior Designer icon" height="46px" width="45px" />
                                 </Grid>
                             </Grid>
                             <Grid container xs={10} className="icon-img" direction="row" justify="space-around" alignItems="center">
@@ -35,182 +35,178 @@ const ServiceCard = (props) => {
 
                             <Grid container xs={10} className="icon-img" direction="row" justify="space-around" alignItems="center">
                                 <Grid container item xs={4} className="icon-img" direction="column" justify="center" alignItems="center" >
-                                <img src={ServiceData.contractor.imgsrc} alt="Contractor icon" height="48px" width="43px" />
+                                    <img src={ServiceData.contractor.imgsrc} alt="Contractor icon" height="48px" width="43px" />
                                 </Grid>
                                 <Grid container item xs={4} className="icon-img" direction="column" justify="center" alignItems="center" >
-                                <img src={ServiceData.civilEngineer.imgsrc} alt="CivilEngineer icon" height="44px" width="39px" />
+                                    <img src={ServiceData.civilEngineer.imgsrc} alt="CivilEngineer icon" height="44px" width="39px" />
                                 </Grid>
                             </Grid>
                             <Grid container xs={10} className="icon-img" direction="row" justify="space-around" alignItems="center">
                                 <Grid container item xs={4} className="icon-img" direction="column" justify="center" alignItems="center" >
-                                <Grid className="Styled-icon-title-mob">{ServiceData.contractor.title}</Grid>
+                                    <Grid className="Styled-icon-title-mob">{ServiceData.contractor.title}</Grid>
                                 </Grid>
                                 <Grid container item xs={4} className="icon-img" direction="column" justify="center" alignItems="center" >
-                                <Grid className="Styled-icon-title-mob">{ServiceData.civilEngineer.title}</Grid>
+                                    <Grid className="Styled-icon-title-mob">{ServiceData.civilEngineer.title}</Grid>
                                 </Grid>
                             </Grid>
 
                             <Grid container xs={10} className="icon-img" direction="row" justify="space-around" alignItems="center">
                                 <Grid container item xs={4} className="icon-img" direction="column" justify="center" alignItems="center" >
-                                <img src={ServiceData.fabricator.imgsrc} alt="Fabricator icon" height="46px" width="46px" />
+                                    <img src={ServiceData.fabricator.imgsrc} alt="Fabricator icon" height="46px" width="46px" />
                                 </Grid>
                                 <Grid container item xs={4} className="icon-img" direction="column" justify="center" alignItems="center" >
-                                <img src={ServiceData.modularKitchen.imgsrc} alt="ModularKitchen icon" height="46px" width="43px" />
+                                    <img src={ServiceData.modularKitchen.imgsrc} alt="ModularKitchen icon" height="46px" width="43px" />
                                 </Grid>
                             </Grid>
                             <Grid container xs={10} className="icon-img" direction="row" justify="space-around" alignItems="center">
                                 <Grid container item xs={4} className="icon-img" direction="column" justify="center" alignItems="center" >
-                                <Grid className="Styled-icon-title-mob">{ServiceData.fabricator.title}</Grid>
+                                    <Grid className="Styled-icon-title-mob">{ServiceData.fabricator.title}</Grid>
                                 </Grid>
                                 <Grid container item xs={4} className="icon-img" direction="column" justify="center" alignItems="center" >
-                                <Grid className="Styled-icon-title-mob">{ServiceData.modularKitchen.title}</Grid>
+                                    <Grid className="Styled-icon-title-mob">{ServiceData.modularKitchen.title}</Grid>
                                 </Grid>
                             </Grid>
 
                             <Grid container xs={10} className="icon-img" direction="row" justify="space-around" alignItems="center">
                                 <Grid container item xs={4} className="icon-img" direction="column" justify="center" alignItems="center" >
-                                <img src={ServiceData.constructionCompanies.imgsrc} alt="Construction Companies icon" height="49px" width="50px" />
+                                    <img src={ServiceData.constructionCompanies.imgsrc} alt="Construction Companies icon" height="49px" width="50px" />
                                 </Grid>
                                 <Grid container item xs={4} className="icon-img" direction="column" justify="center" alignItems="center" >
-                                <img src={ServiceData.electricians.imgsrc} alt="Electricians icon" height="49px" width="35px" />
+                                    <img src={ServiceData.electricians.imgsrc} alt="Electricians icon" height="49px" width="35px" />
                                 </Grid>
                             </Grid>
                             <Grid container xs={10} className="icon-img" direction="row" justify="space-around" alignItems="center">
                                 <Grid container item xs={4} className="icon-img" direction="column" justify="center" alignItems="center" >
-                                <Grid className="Styled-icon-title-mob">{ServiceData.constructionCompanies.title}</Grid>
+                                    <Grid className="Styled-icon-title-mob">{ServiceData.constructionCompanies.title}</Grid>
                                 </Grid>
                                 <Grid container item xs={4} className="icon-img" direction="column" justify="center" alignItems="center" >
-                                <Grid className="Styled-icon-title-mob">{ServiceData.electricians.title}</Grid>
+                                    <Grid className="Styled-icon-title-mob">{ServiceData.electricians.title}</Grid>
                                 </Grid>
                             </Grid>
 
-                            
+
                             <Grid container xs={10} className="icon-img" direction="row" justify="space-around" alignItems="center">
                                 <Grid container item xs={4} className="icon-img" direction="column" justify="center" alignItems="center" >
-                                <img src={ServiceData.plumbers.imgsrc} alt="Plumbers icon" height="46px" width="36px" />
+                                    <img src={ServiceData.plumbers.imgsrc} alt="Plumbers icon" height="46px" width="36px" />
                                 </Grid>
                                 <Grid container item xs={4} className="icon-img" direction="column" justify="center" alignItems="center" >
-                                <img src={ServiceData.painters.imgsrc} alt="Painters icon" height="42px" width="25px" />
+                                    <img src={ServiceData.painters.imgsrc} alt="Painters icon" height="42px" width="25px" />
                                 </Grid>
                             </Grid>
                             <Grid container xs={10} className="icon-img" direction="row" justify="space-around" alignItems="center">
                                 <Grid container item xs={4} className="icon-img" direction="column" justify="center" alignItems="center" >
-                                <Grid className="Styled-icon-title-mob">{ServiceData.plumbers.title}</Grid>
+                                    <Grid className="Styled-icon-title-mob">{ServiceData.plumbers.title}</Grid>
                                 </Grid>
                                 <Grid container item xs={4} className="icon-img" direction="column" justify="center" alignItems="center" >
-                                <Grid className="Styled-icon-title-mob">{ServiceData.painters.title}</Grid>
+                                    <Grid className="Styled-icon-title-mob">{ServiceData.painters.title}</Grid>
                                 </Grid>
                             </Grid>
 
                             <Grid container xs={10} className="icon-img" direction="row" justify="space-around" alignItems="center">
                                 <Grid container item xs={4} className="icon-img" direction="column" justify="center" alignItems="center" >
-                                <img src={ServiceData.carpenters.imgsrc} alt="Carpenters icon" height="46px" width="45px" />
+                                    <img src={ServiceData.carpenters.imgsrc} alt="Carpenters icon" height="46px" width="45px" />
                                 </Grid>
                                 <Grid container item xs={4} className="icon-img" direction="column" justify="center" alignItems="center" >
-                                <img src={ServiceData.rightSideAngleIcon.imgsrc} alt="RightSideAngle Icon" height="31px" width="19px" />
+                                    <img src={ServiceData.rightSideAngleIcon.imgsrc} alt="RightSideAngle Icon" height="31px" width="19px" />
                                 </Grid>
                             </Grid>
                             <Grid container xs={10} className="icon-img" direction="row" justify="space-around" alignItems="center">
                                 <Grid container item xs={4} className="icon-img" direction="column" justify="center" alignItems="center" >
-                                <Grid className="Styled-icon-title-mob">{ServiceData.carpenters.title}</Grid>
+                                    <Grid className="Styled-icon-title-mob">{ServiceData.carpenters.title}</Grid>
                                 </Grid>
                                 <Grid container item xs={4} className="icon-img" direction="column" justify="center" alignItems="center" >
-                                <Grid className="Styled-icon-title-mob">{ServiceData.rightSideAngleIcon.title}</Grid>
+                                    <Grid className="Styled-icon-title-mob">{ServiceData.rightSideAngleIcon.title}</Grid>
                                 </Grid>
                             </Grid>
 
-                           
+
 
                         </StyledServicesGrid>
                     </>
-                ) : ( 
-                        <> 
+                ) : (
+                        <>
                             <Grid container item justify="center" alignItems="center" className="servicesHeader">Services</Grid>
-                            <StyledServicesGrid className="servicesGrid" container item direction="column" justify="center" alignItems="center" >
-                                <Grid container sm={8} className="icon-line1" direction="column" justify-lg-center spacing={1}>
-                                    <Grid container className="icon-img" direction="row" justify-lg-center spacing={1}>
-                                        <Grid item md={2}>
-                                            <img src={ServiceData.architech.imgsrc} alt="Architech icon" height="83px" width="64px" />
+                            <StyledServicesGrid container item sm={8} direction="column" justify="center" alignItems="center" >
+                                <Grid container className="icon-line1" direction="column" justify-sm-center spacing={1}>
+                                    <Grid container className="icon-img" direction="row" justify-sm-center spacing={1}>
+                                        <Grid item sm={2}>
+                                            <img src={ServiceData.architech.imgsrc} alt="Architech icon" height="55px" width="43px" />
                                         </Grid>
-                                        <Grid item md={2}>
-                                            <img src={ServiceData.interiorDesigner.imgsrc} alt="Interior Designer icon" height="69px" width="67px" />
+                                        <Grid item sm={2}>
+                                            <img src={ServiceData.interiorDesigner.imgsrc} alt="Interior Designer icon" height="46px" width="45px" />
                                         </Grid>
-                                        <Grid item md={2}>
-                                            <img src={ServiceData.contractor.imgsrc} alt="Contractor icon" height="72px" width="65px" />
+                                        <Grid item sm={2}>
+                                            <img src={ServiceData.contractor.imgsrc} alt="Contractor icon" height="48px" width="43px" />
                                         </Grid>
-                                        <Grid item md={2}>
-                                            <img src={ServiceData.civilEngineer.imgsrc} alt="CivilEngineer icon" height="66px" width="58px" />
+                                        <Grid item sm={2}>
+                                            <img src={ServiceData.civilEngineer.imgsrc} alt="CivilEngineer icon" height="44px" width="39px" />
                                         </Grid>
-                                        <Grid item md={2}>
-                                            <img src={ServiceData.fabricator.imgsrc} alt="Fabricator icon" height="69px" width="69px" />
+                                        <Grid item sm={2}>
+                                            <img src={ServiceData.fabricator.imgsrc} alt="Fabricator icon" height="46px" width="46px" />
                                         </Grid>
-                                        <Grid item md={2}>
-                                            <img src={ServiceData.modularKitchen.imgsrc} alt="ModularKitchen icon" height="69px" width="64px" />
+                                        <Grid item sm={2}>
+                                            <img src={ServiceData.modularKitchen.imgsrc} alt="ModularKitchen icon" height="46px" width="43px" />
                                         </Grid>
                                     </Grid>
-
-                                    <Grid container className="icon-text" direction="row" justify-md-center spacing={1}>
-                                        <Grid item md={2}>
+                                    <Grid container className="icon-text" direction="row" justify-sm-center spacing={1}>
+                                        <Grid item sm={2}>
                                             <Grid className="Styled-icon-title">{ServiceData.architech.title}</Grid>
                                         </Grid>
-                                        <Grid item md={2}>
+                                        <Grid item sm={2}>
                                             <Grid className="Styled-icon-title">{ServiceData.interiorDesigner.title}</Grid>
                                         </Grid>
-                                        <Grid item md={2}>
+                                        <Grid item sm={2}>
                                             <Grid className="Styled-icon-title">{ServiceData.contractor.title}</Grid>
                                         </Grid>
-                                        <Grid item md={2}>
+                                        <Grid item sm={2}>
                                             <Grid className="Styled-icon-title">{ServiceData.civilEngineer.title}</Grid>
                                         </Grid>
-                                        <Grid item md={2}>
+                                        <Grid item sm={2}>
                                             <Grid className="Styled-icon-title">{ServiceData.fabricator.title}</Grid>
                                         </Grid>
-                                        <Grid item md={2}>
+                                        <Grid item sm={2}>
                                             <Grid className="Styled-icon-title">{ServiceData.modularKitchen.title}</Grid>
                                         </Grid>
                                     </Grid>
                                 </Grid>
-
-
-                                <Grid container sm={8} className="icon-line2" direction="column" justify-md-center spacing={1}>
-                                    <Grid container className="icon-img" direction="row" justify-md-center spacing={1}>
-                                        <Grid item md={2}>
-                                            <img src={ServiceData.constructionCompanies.imgsrc} alt="Construction Companies icon" height="74px" width="75px" />
+                                <Grid container className="icon-line2" direction="column" justify-sm-center spacing={1}>
+                                    <Grid container className="icon-img" direction="row" justify-sm-center spacing={1}>
+                                        <Grid item sm={2}>
+                                            <img src={ServiceData.constructionCompanies.imgsrc} alt="Construction Companies icon" height="49px" width="50px" />
                                         </Grid>
-                                        <Grid item md={2}>
-                                            <img src={ServiceData.electricians.imgsrc} alt="Electricians icon" height="74px" width="53px" />
+                                        <Grid item sm={2}>
+                                            <img src={ServiceData.electricians.imgsrc} alt="Electricians icon" height="49px" width="35px" />
                                         </Grid>
-                                        <Grid item md={2}>
-                                            <img src={ServiceData.plumbers.imgsrc} alt="Plumbers icon" height="69px" width="54px" />
+                                        <Grid item sm={2}>
+                                            <img src={ServiceData.plumbers.imgsrc} alt="Plumbers icon" height="46px" width="36px" />
                                         </Grid>
-                                        <Grid item md={2} justify="center">
-                                            <img src={ServiceData.painters.imgsrc} alt="Painters icon" height="63px" width="38px" />
+                                        <Grid item sm={2}>
+                                            <img src={ServiceData.painters.imgsrc} alt="Painters icon" height="30px" width="25px" />
                                         </Grid>
-                                        <Grid item md={2}>
-                                            <img src={ServiceData.carpenters.imgsrc} alt="Carpenters icon" height="69px" width="68px" />
+                                        <Grid item sm={2}>
+                                            <img src={ServiceData.carpenters.imgsrc} alt="Carpenters icon" height="46px" width="45px" />
                                         </Grid>
-                                        <Grid item md={2}>
-                                            <img src={ServiceData.rightSideAngleIcon.imgsrc} alt="RightSideAngle Icon" height="46px" width="28px" />
+                                        <Grid item sm={2}>
+                                            <img src={ServiceData.rightSideAngleIcon.imgsrc} alt="RightSideAngle Icon" height="31px" width="19px" />
                                         </Grid>
                                     </Grid>
-
-                                    <Grid container className="icon-text" direction="row" justify-md-center spacing={1}>
-                                        <Grid item md={2}>
+                                    <Grid container className="icon-text" direction="row" justify-sm-center spacing={1}>
+                                        <Grid item sm={2}>
                                             <Grid className="Styled-icon-title">{ServiceData.constructionCompanies.title}</Grid>
                                         </Grid>
-                                        <Grid item md={2}>
+                                        <Grid item sm={2}>
                                             <Grid className="Styled-icon-title">{ServiceData.electricians.title}</Grid>
                                         </Grid>
-                                        <Grid item md={2}>
+                                        <Grid item sm={2}>
                                             <Grid className="Styled-icon-title">{ServiceData.plumbers.title}</Grid>
                                         </Grid>
-                                        <Grid item md={2}>
+                                        <Grid item sm={2}>
                                             <Grid className="Styled-icon-title">{ServiceData.painters.title}</Grid>
                                         </Grid>
-                                        <Grid item md={2}>
+                                        <Grid item sm={2}>
                                             <Grid className="Styled-icon-title">{ServiceData.carpenters.title}</Grid>
                                         </Grid>
-                                        <Grid item md={2}>
+                                        <Grid item sm={2}>
                                             <Grid className="Styled-icon-title">{ServiceData.rightSideAngleIcon.title}</Grid>
                                         </Grid>
                                     </Grid>

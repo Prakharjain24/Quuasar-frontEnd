@@ -1,17 +1,17 @@
 import { Button, Grid } from '@material-ui/core';
 import React, { useEffect } from 'react';
-import brandLogo from '../../images/Website Layout/Signup page assets/brandLogo.png';
-import Registered from '../LoginPageSection/Registered';
 import { useState } from 'react';
 import { NavLink, useLocation } from "react-router-dom";
 import useMediaQuery from '@material-ui/core/useMediaQuery';
 import { useTheme } from '@material-ui/core/styles';
-import painting from '../../images/Website Layout/Signup page assets/Painting.png';
-import facebookicon from '../../images/Website Layout/Landing page assets/facebook-icon.png';
-import instaicon from '../../images/Website Layout/Landing page assets/insta-icon.png';
-import linkedinicon from '../../images/Website Layout/Landing page assets/linkin-icon.png';
-import twittericon from '../../images/Website Layout/Landing page assets/twitter-icon.png';
-import brandlogoBottom from '../../images/Website Layout/Landing page assets/brandLogo.png'
+import BlueHorizontalLetterLogo from '../../images/QuuasarLogo/Blue/BlueHorizontalLetterLogo.svg';
+import Registered from '../LoginPageSection/Registered';
+import painting from '../../images/WebLayout/SignupPage/Painting.png';
+import facebookicon from '../../images/WebLayout/LandingPage/SocialMedia/facebookIcon.svg';
+import instaicon from '../../images/WebLayout/LandingPage/SocialMedia/instagramIcon.svg';
+import linkedinicon from '../../images/WebLayout/LandingPage/SocialMedia/linkedinIcon.svg';
+import twittericon from '../../images/WebLayout/LandingPage/SocialMedia/twitterIcon.svg';
+import WhiteHorizontalLetterLogo from '../../images/QuuasarLogo/White/WhiteHorizontalLetterLogo.svg';
 import {
     StyledButtonGrid,
     StyledFooterMobile,
@@ -114,7 +114,7 @@ const Loginpage = () => {
 
                         <StyledHeaderMobile container xs={12} direction="row">
                             <Grid container item xs={6} alignItems="center" justify="center">
-                                <NavLink to="/"><img className="Styled-Brand-Logo" src={brandLogo} alt="brandLogo" /></NavLink>
+                                <NavLink to="/"><img className="Styled-Brand-Logo" src={BlueHorizontalLetterLogo} alt="brandLogo" /></NavLink>
                             </Grid>
                         </StyledHeaderMobile>
                         {/* 
@@ -254,7 +254,7 @@ const Loginpage = () => {
                                 </Grid>
                             </Grid>
                             <Grid container item xs={6} direction="row" justify="flex-end" alignItems="center">
-                                <img className="logoBottom" src={brandlogoBottom} alt={brandlogoBottom} />
+                                <img className="logoBottom" src={WhiteHorizontalLetterLogo} alt="Brand Logo" />
                             </Grid>
                         </StyledFooterMobile>
 
@@ -264,7 +264,7 @@ const Loginpage = () => {
                     <Grid container >
                         <StyledLeftGrid container item sm={8} alignItems="center" justify="center">
                             <StyledHeaderLeftGrid container item sm={10} alignItems="center" justify="flex-start" direction="row">
-                                <NavLink to="/"><img className="brandLogo" src={brandLogo} alt="brandLogo" /></NavLink>
+                                <NavLink to="/"><img className="brandLogo" src={BlueHorizontalLetterLogo} alt="brandLogo" /></NavLink>
                             </StyledHeaderLeftGrid>
 
                             <StyledContentLeftGrid container>

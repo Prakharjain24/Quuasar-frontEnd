@@ -3,6 +3,7 @@ import styled from "@emotion/styled";
 
 export const StyledApp = styled(Grid)`
 text-align:center;
+
 .servicesHeader{
     padding-top: 93px;
     font-size: 45px;
@@ -30,12 +31,5 @@ text-align:center;
 `;
 
 export const StyledServicesGrid = styled(Grid)`
-// .servicesGrid{
-//     padding: 75px 0px;
-// }
-// .servicesGridMob{
-//     padding: 53px 0px;
-// }
-padding: 58px 0px;
-    // padding: 75px 0px;
+    padding: 58px 0px;
 `;

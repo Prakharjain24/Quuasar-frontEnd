@@ -1,23 +1,23 @@
 import React from 'react';
 import { NavLink } from "react-router-dom";
-import './style';
 import { Grid } from '@material-ui/core';
-import facebookicon from '../../images/Website Layout/Landing page assets/facebook-icon.png';
-import instaicon from '../../images/Website Layout/Landing page assets/insta-icon.png';
-import linkedinicon from '../../images/Website Layout/Landing page assets/linkin-icon.png';
-import twittericon from '../../images/Website Layout/Landing page assets/twitter-icon.png';
-import brandlogoBottom from '../../images/Website Layout/Landing page assets/brandLogo.png'
-import { StyledFooter, StyledFooterMobile } from './style';
 import useMediaQuery from '@material-ui/core/useMediaQuery';
-import { useTheme } from '@material-ui/core/styles'
+import { useTheme } from '@material-ui/core/styles';
+import facebookicon from '../../images/WebLayout/LandingPage/SocialMedia/facebookIcon.svg';
+import instaicon from '../../images/WebLayout/LandingPage/SocialMedia/instagramIcon.svg';
+import linkedinicon from '../../images/WebLayout/LandingPage/SocialMedia/linkedinIcon.svg';
+import twittericon from '../../images/WebLayout/LandingPage/SocialMedia/twitterIcon.svg';
+import WhiteHorizontalLetterLogo from '../../images/QuuasarLogo/White/WhiteHorizontalLetterLogo.svg';
+import { StyledFooter, StyledFooterMobile } from './style';
 
 const FooterSection = () => {
     const theme = useTheme();
     const matches = useMediaQuery(theme.breakpoints.down('xs'));
+
     return (
         <React.Fragment>
-            {matches ? (
-                <>
+            {matches
+                ? (<>
                     <StyledFooterMobile container direction="column" justify="center" className="footerbgMB">
                         <Grid container item xs={6} direction="column" justify="flex-start" alignItems="center">
                             <Grid className="footerText" direction="row" justify="flex-start">Connect to us with</Grid>
@@ -29,11 +29,11 @@ const FooterSection = () => {
                             </Grid>
                         </Grid>
                         <Grid container item xs={6} direction="row" justify="flex-end" alignItems="center">
-                            <img className="logoBottom" src={brandlogoBottom} alt={brandlogoBottom} />
+                            <img className="logoBottom" src={WhiteHorizontalLetterLogo} alt="BrandLogo" />
                         </Grid>
                     </StyledFooterMobile>
                 </>
-            ) : (
+                ) : (
                     <StyledFooter container item direction="row" wrap="nowrap" justify="center" alignItems="center">
                         <Grid container direction="row" item sm={10} wrap="nowrap">
                             <Grid container direction="column" justify="flex-start" alignItems="center" item sm={9}>
@@ -48,13 +48,12 @@ const FooterSection = () => {
                                 </Grid>
                             </Grid>
                             <Grid container item sm={3} alignItems="center" justify="flex-end">
-                                <NavLink to="/"><img className="logoBottom" src={brandlogoBottom} alt={brandlogoBottom} /></NavLink>
+                                <NavLink to="/"><img className="logoBottom" src={WhiteHorizontalLetterLogo} alt="BrandLogo" /></NavLink>
                             </Grid>
                         </Grid>
                     </StyledFooter>
                 )
             }
-
         </React.Fragment>
     );
 }

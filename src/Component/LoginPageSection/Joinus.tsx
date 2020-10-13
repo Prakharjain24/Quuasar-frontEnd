@@ -1,29 +1,28 @@
 import React from 'react'
-import { Grid, Button } from '@material-ui/core';
-import styled from "@emotion/styled";
-import { NavLink } from "react-router-dom";
-import ClientImage from '../../images/Website Layout/Landing page assets/client.png';
-import ProfessionalImage from '../../images/Website Layout/Landing page assets/professional.png';
 import Modal from 'react-modal';
-import Loginpage from './Loginpage';
+import { NavLink } from "react-router-dom";
+import { Grid, Button } from '@material-ui/core';
 import useMediaQuery from '@material-ui/core/useMediaQuery';
-import { useTheme } from '@material-ui/core/styles'
+import { useTheme } from '@material-ui/core/styles';
+import styled from "@emotion/styled";
+import ClientImage from '../../images/WebLayout/LandingPage/ClientIcon.png';
+import ProfessionalImage from '../../images/WebLayout/LandingPage/ProfessionalIcon.png';
 
 const StyledModal = styled(Grid)`
     .Styled-joinus-button{
-    width: 185px;
-    height: 38px;
-    border: 2px solid rgb(13, 39, 103);
-    border-radius: 2rem;
-    font-family: Montserrat, sans-serif;
-    font-size: 18px;
-    font-weight: 600;
-    margin-top: 35px;
-    text-transform: none;
-    cursor: pointer;
-    background-color: rgb(13, 39, 103);
-    color: rgb(255, 255, 255);
-    text-decoration: none;
+        width: 185px;
+        height: 38px;
+        border: 2px solid rgb(13, 39, 103);
+        border-radius: 2rem;
+        font-family: Montserrat, sans-serif;
+        font-size: 18px;
+        font-weight: 600;
+        margin-top: 35px;
+        text-transform: none;
+        cursor: pointer;
+        background-color: rgb(13, 39, 103);
+        color: rgb(255, 255, 255);
+        text-decoration: none;
     }
     .Styled-joinus-btn-mob{
         width: 120px;
@@ -50,20 +49,12 @@ const StyledClientGrid = styled(Grid)`
     width: 160px;
     height: 155px;
 }
-// .client-mob{
-//     width: 10px;
-//     height: 10px;
-// }
 `;
 const StyledProfessionalGrid = styled(Grid)`
 .professional{
     width: 160px;
     height: 155px;
 }
-// .professional-mob{
-//     width: 10px;
-//     height: 10px;
-// }
 `;
 
 Modal.setAppElement('#root')

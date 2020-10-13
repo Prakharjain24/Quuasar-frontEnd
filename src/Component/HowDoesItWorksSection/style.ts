@@ -3,6 +3,7 @@ import styled from "@emotion/styled";
 
 export const StyledWork = styled(Grid)`
 text-align:center;
+
 .worksHeader{
     padding-top: 42px;
     font-size: 45px;
@@ -11,11 +12,10 @@ text-align:center;
 }
 .StyledImg{
     padding-top: 93px;
-    // width: 1280px;
     // height: 720px;
-    // width: 120px;
-    // height: 120px;
+    // width: 1280px;
 }
+
 /* Large desktops and laptops */
 @media (min-width: 1200px) {
     .worksHeader{

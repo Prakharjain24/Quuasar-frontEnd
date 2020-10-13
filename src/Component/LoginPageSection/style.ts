@@ -1,7 +1,7 @@
 import { Grid } from '@material-ui/core';
 import styled from "@emotion/styled";
-import croppedLogoIcon from '../../images/Website Layout/Signup page assets/Cropped-logo-icon.png';
-import painting from '../../images/Website Layout/Signup page assets/Painting.png';
+import LogoBackground from '../../images/WebLayout/SignupPage/LogoBackground.png';
+import painting from '../../images/WebLayout/SignupPage/Painting.png';
 
 //////////////// Loginpage Mobile view //////////////////////
 
@@ -11,7 +11,7 @@ width: 100%;
 
 export const StyledHeaderMobile = styled(Grid)`
     height: 80px;
-    // background-color: green;
+    
     .Styled-Brand-Logo{
         width: 132px;
         height: 20px;
@@ -20,7 +20,6 @@ export const StyledHeaderMobile = styled(Grid)`
 
 export const StyledTitleMobile = styled(Grid)`
     height: 21vh;
-    // background-color: grey; 
     .title1{
         margin-left: 33px;
         font-weight: bold;
@@ -220,7 +219,7 @@ export const StyledContentLeftGrid = styled(Grid)`
 export const StyledRightGrid = styled(Grid)`
     height: 100vh;
     background-color: #0D2767;
-    background-image: url(${croppedLogoIcon});
+    background-image: url(${LogoBackground});
     background-size: cover;
     background-position: right bottom;
     background-repeat: no-repeat;

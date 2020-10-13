@@ -1,6 +1,6 @@
 import React from 'react';
 import Grid from "@material-ui/core/Grid";
-import ServiceData from './ServiceData';
+import { ServiceData } from './ServiceData';
 import { StyledApp, StyledServicesGrid } from './style';
 import useMediaQuery from '@material-ui/core/useMediaQuery';
 import { useTheme } from '@material-ui/core/styles'
@@ -18,7 +18,7 @@ const ServiceCard = (props) => {
 
                             <Grid container xs={10} className="icon-img" direction="row" justify="space-around" alignItems="center">
                                 <Grid container item xs={4} className="icon-img" direction="column" justify="center" alignItems="center" >
-                                    <img src={ServiceData.architech.imgsrc} alt="Architech icon" height="55px" width="42px" />
+                                    <img src={ServiceData.architecht.imgsrc} alt="Architech icon" height="55px" width="42px" />
                                 </Grid>
                                 <Grid container item xs={4} className="icon-img" direction="column" justify="center" alignItems="center" >
                                     <img src={ServiceData.interiorDesigner.imgsrc} alt="Interior Designer icon" height="46px" width="45px" />
@@ -26,7 +26,7 @@ const ServiceCard = (props) => {
                             </Grid>
                             <Grid container xs={10} className="icon-img" direction="row" justify="space-around" alignItems="center">
                                 <Grid container item xs={4} className="icon-img" direction="column" justify="center" alignItems="center" >
-                                    <Grid className="Styled-icon-title-mob">{ServiceData.architech.title}</Grid>
+                                    <Grid className="Styled-icon-title-mob">{ServiceData.architecht.title}</Grid>
                                 </Grid>
                                 <Grid container item xs={4} className="icon-img" direction="column" justify="center" alignItems="center" >
                                     <Grid className="Styled-icon-title-mob">{ServiceData.interiorDesigner.title}</Grid>
@@ -107,7 +107,7 @@ const ServiceCard = (props) => {
                                     <img src={ServiceData.carpenters.imgsrc} alt="Carpenters icon" height="46px" width="45px" />
                                 </Grid>
                                 <Grid container item xs={4} className="icon-img" direction="column" justify="center" alignItems="center" >
-                                    <img src={ServiceData.rightSideAngleIcon.imgsrc} alt="RightSideAngle Icon" height="31px" width="19px" />
+                                    <img src={ServiceData.andMore.imgsrc} alt="AndMore Icon" height="31px" width="19px" />
                                 </Grid>
                             </Grid>
                             <Grid container xs={10} className="icon-img" direction="row" justify="space-around" alignItems="center">
@@ -115,7 +115,7 @@ const ServiceCard = (props) => {
                                     <Grid className="Styled-icon-title-mob">{ServiceData.carpenters.title}</Grid>
                                 </Grid>
                                 <Grid container item xs={4} className="icon-img" direction="column" justify="center" alignItems="center" >
-                                    <Grid className="Styled-icon-title-mob">{ServiceData.rightSideAngleIcon.title}</Grid>
+                                    <Grid className="Styled-icon-title-mob">{ServiceData.andMore.title}</Grid>
                                 </Grid>
                             </Grid>
 
@@ -130,7 +130,7 @@ const ServiceCard = (props) => {
                                 <Grid container className="icon-line1" direction="column" justify-sm-center spacing={1}>
                                     <Grid container className="icon-img" direction="row" justify-sm-center spacing={1}>
                                         <Grid item sm={2}>
-                                            <img src={ServiceData.architech.imgsrc} alt="Architech icon" height="55px" width="43px" />
+                                            <img src={ServiceData.architecht.imgsrc} alt="Architech icon" height="55px" width="43px" />
                                         </Grid>
                                         <Grid item sm={2}>
                                             <img src={ServiceData.interiorDesigner.imgsrc} alt="Interior Designer icon" height="46px" width="45px" />
@@ -150,7 +150,7 @@ const ServiceCard = (props) => {
                                     </Grid>
                                     <Grid container className="icon-text" direction="row" justify-sm-center spacing={1}>
                                         <Grid item sm={2}>
-                                            <Grid className="Styled-icon-title">{ServiceData.architech.title}</Grid>
+                                            <Grid className="Styled-icon-title">{ServiceData.architecht.title}</Grid>
                                         </Grid>
                                         <Grid item sm={2}>
                                             <Grid className="Styled-icon-title">{ServiceData.interiorDesigner.title}</Grid>
@@ -187,7 +187,7 @@ const ServiceCard = (props) => {
                                             <img src={ServiceData.carpenters.imgsrc} alt="Carpenters icon" height="46px" width="45px" />
                                         </Grid>
                                         <Grid item sm={2}>
-                                            <img src={ServiceData.rightSideAngleIcon.imgsrc} alt="RightSideAngle Icon" height="31px" width="19px" />
+                                            <img src={ServiceData.andMore.imgsrc} alt="AndMore Icon" height="31px" width="19px" />
                                         </Grid>
                                     </Grid>
                                     <Grid container className="icon-text" direction="row" justify-sm-center spacing={1}>
@@ -207,7 +207,7 @@ const ServiceCard = (props) => {
                                             <Grid className="Styled-icon-title">{ServiceData.carpenters.title}</Grid>
                                         </Grid>
                                         <Grid item sm={2}>
-                                            <Grid className="Styled-icon-title">{ServiceData.rightSideAngleIcon.title}</Grid>
+                                            <Grid className="Styled-icon-title">{ServiceData.andMore.title}</Grid>
                                         </Grid>
                                     </Grid>
                                 </Grid>

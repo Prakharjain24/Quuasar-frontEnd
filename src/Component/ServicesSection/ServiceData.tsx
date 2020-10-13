@@ -1,18 +1,18 @@
-import architect from '../../images/Website Layout/Landing page assets/Architect-icon.png';
-import interiorDesigner from '../../images/Website Layout/Landing page assets/Interior-icon.png'
-import contractor from '../../images/Website Layout/Landing page assets/Contractor-icon.png'
-import civilEngineer from '../../images/Website Layout/Landing page assets/Civil-eng-icon.png'
-import fabricator from '../../images/Website Layout/Landing page assets/Fabricator-icon.png'
-import modularKitchen from '../../images/Website Layout/Landing page assets/Modular-kitchen-icon.png'
-import constructionCompanies from '../../images/Website Layout/Landing page assets/Contruction-co-icon.png'
-import electricians from '../../images/Website Layout/Landing page assets/Electrician-icon.png'
-import plumbers from '../../images/Website Layout/Landing page assets/Plumber-icon.png'
-import painters from '../../images/Website Layout/Landing page assets/Painters-icon.png'
-import carpenters from '../../images/Website Layout/Landing page assets/Carpenter-icon.png'
-import rightSideAngleIcon from '../../images/Website Layout/Landing page assets/More-icon.png'
+import architect from '../../images/WebLayout/LandingPage/Services/ArchitectIcon.svg';
+import interiorDesigner from '../../images/WebLayout/LandingPage/Services/InteriorIcon.svg'
+import contractor from '../../images/WebLayout/LandingPage/Services/ContractorIcon.svg'
+import civilEngineer from '../../images/WebLayout/LandingPage/Services/CivilEnggIcon.svg'
+import fabricator from '../../images/WebLayout/LandingPage/Services/FabricatorIcon.svg'
+import modularKitchen from '../../images/WebLayout/LandingPage/Services/ModularKitchenIcon.svg'
+import constructionCompanies from '../../images/WebLayout/LandingPage/Services/ConstCompIcon.svg'
+import electricians from '../../images/WebLayout/LandingPage/Services/ElectricianIcon.svg'
+import plumbers from '../../images/WebLayout/LandingPage/Services/PlumberIcon.svg'
+import painters from '../../images/WebLayout/LandingPage/Services/PainterIcon.svg'
+import carpenters from '../../images/WebLayout/LandingPage/Services/CarpenterIcon.svg'
+import andMore from '../../images/WebLayout/LandingPage/Services/AndMoreIcon.svg'
  
-const ServiceData = {
-    architech : {
+export const ServiceData = {
+    architecht : {
         imgsrc : architect,
         title : 'Architect',
     },
@@ -56,9 +56,8 @@ const ServiceData = {
         imgsrc : carpenters,
         title : 'Carpenters',
     },
-    rightSideAngleIcon : {
-        imgsrc : rightSideAngleIcon,
+    andMore : {
+        imgsrc : andMore,
         title : 'and more...',
     },
-}
-export default ServiceData;
+};

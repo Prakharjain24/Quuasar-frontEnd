@@ -1,10 +1,10 @@
-import { Grid } from '@material-ui/core';
 import React from 'react'
 import Modal from 'react-modal';
-import CheckoutAnimation from '../../images/Website Layout/Signup page assets/CheckOut.gif';
-import { StyledModalPopUp } from './style';
+import { Grid } from '@material-ui/core';
 import useMediaQuery from '@material-ui/core/useMediaQuery';
 import { useTheme } from '@material-ui/core/styles';
+import Tick from '../../images/WebLayout/SignupPage/Tick.gif';
+import { StyledModalPopUp } from './style';
 
 Modal.setAppElement('#root')
 const Registered = (props) => {
@@ -43,7 +43,7 @@ const Registered = (props) => {
                         >
                             <StyledModalPopUp>
                                 <Grid container direction="column" justify="center" alignItems="center">
-                                    <img className=".checkoutImg-mob" src={CheckoutAnimation} alt="Checkout animation" style={{ width: "81px", height: "80px" }} />\
+                                    <img className=".checkoutImg-mob" src={Tick} alt="Tick animation" style={{ width: "81px", height: "80px" }} />\
                                 </Grid>
                                 <Grid container direction="column" justify="center" alignItems="center">
                                     <Grid className="mess1-mob">Thank you</Grid>
@@ -97,7 +97,7 @@ const Registered = (props) => {
                                     </Grid>
                                 </Grid>
                                 <Grid item container sm={5} direction="column" justify="center" alignItems="center">
-                                    <Grid><img className="checkoutImage" src={CheckoutAnimation} alt="Checkout animation" /></Grid>
+                                    <Grid><img className="checkoutImage" src={Tick} alt="Tick animation" /></Grid>
                                 </Grid>
                             </StyledModalPopUp>
                         </Modal>

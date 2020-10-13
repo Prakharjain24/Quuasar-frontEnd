@@ -1,11 +1,12 @@
 import { Grid } from '@material-ui/core';
 import styled from "@emotion/styled";
-import footerBgImg from '../../images/Website Layout/Landing page assets/footer-bg-rectangle.png'
+// import footerBgImg from '../../images/Website Layout/Landing page assets/footer-bg-rectangle.png'
 
 export const StyledFooterMobile = styled(Grid)`
 background-color: #283479;
 height: 111px;
 width: 100%;
+
 .footerText{
     padding-top: 11px;
     padding-left: 23px;
@@ -44,7 +45,7 @@ width: 100%;
 }
 `;
 export const StyledFooter = styled(Grid)`
-    background-image: url(${footerBgImg});
+    background-color: #0D2767;
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;

@@ -1,6 +1,7 @@
 import { Button, Grid } from '@material-ui/core';
 import React, { useEffect } from 'react';
 import { useState } from 'react';
+import Box from '@material-ui/core/Box';
 import { NavLink, useLocation } from "react-router-dom";
 import useMediaQuery from '@material-ui/core/useMediaQuery';
 import { useTheme } from '@material-ui/core/styles';
@@ -82,6 +83,7 @@ const Loginpage = () => {
         fullname: "",
         phone: "",
         email: "",
+        professional: "",
     });
 
     const handleInputChange = (event) => {
@@ -103,7 +105,7 @@ const Loginpage = () => {
 
     const handleRegisterClick = () => {
         setRegisterButtonStatus(true);
-        setData({ fullname: "", phone: "", email: "" });
+        setData({ fullname: "", phone: "", email: "", professional: "" });
     }
 
     return (
@@ -117,28 +119,8 @@ const Loginpage = () => {
                                 <NavLink to="/"><img className="Styled-Brand-Logo" src={BlueHorizontalLetterLogo} alt="brandLogo" /></NavLink>
                             </Grid>
                         </StyledHeaderMobile>
-                        {/* 
-                        <Grid container xs={5} direction="column" justify="center" alignItems="center" className="brandLogo-mob">
-                            <NavLink to="/"><img src={brandLogo} alt="brandLogo" width="132px" height="20px" /></NavLink>
-                        </Grid> */}
 
-                        {/* <Grid container xs={10} direction="column" justify="space-around" alignItems="center">
-                            <Grid container className="title1">Join us in</Grid>
-                            <Grid container className="title1">this journey</Grid>
-                            <Grid container className="paragraph">
-                                <span>Coming soon</span>
-                            </Grid>
-                        </Grid> */}
-
-                        {/* <StyledTitleMobile className="textMargin" item container direction="column" justify="flex-start" alignContent="flex-start">
-                            <Grid container className="title1" direction="column" justify="flex-start" alignContent="flex-start">Join us in</Grid>
-                            <Grid container className="title1" direction="column" justify="flex-start" alignContent="flex-start">this journey</Grid>
-                            <Grid container className="paragraph" direction="column" justify="flex-start" alignContent="flex-start">
-                                <span>Coming soon</span>
-                            </Grid>
-                        </StyledTitleMobile> */}
-
-                        <StyledTitleMobile>
+                        {/* <StyledTitleMobile>
                             <Grid container className="textMargin" direction="column" justify="flex-start" alignContent="flex-start">
                                 <Grid container className="title1" direction="column" justify="flex-start" alignContent="flex-start">Join us in</Grid>
                                 <Grid container className="title1" direction="column" justify="flex-start" alignContent="flex-start">this journey</Grid>
@@ -146,6 +128,20 @@ const Loginpage = () => {
                             <Grid container className="textMargin" direction="column" justify="flex-start" alignContent="flex-start">
                                 <Grid container className="paragraph" direction="column" justify="flex-start" alignContent="flex-start">
                                     <span>Coming soon...</span>
+                                </Grid>
+                            </Grid>
+                        </StyledTitleMobile> */}
+
+                        <StyledTitleMobile>
+                            <Grid className="textMargin" item container xs={10} direction="column" justify="flex-start" alignItems="center">
+                                <Grid container direction="column" item xs={10} justify="flex-start" alignItems="flex-start">
+                                    <Grid container className="title1" direction="column" justify="flex-start" alignItems="flex-start">
+                                        <span>Join us</span>
+                                        <span>in this journey</span>
+                                    </Grid>
+                                    <Grid container className="paragraph" direction="column" justify="flex-start" alignItems="flex-start">
+                                        Coming soon
+                                        </Grid>
                                 </Grid>
                             </Grid>
                         </StyledTitleMobile>
@@ -271,12 +267,18 @@ const Loginpage = () => {
                                 <Grid className="textMargin" item container xs={8} direction="column" justify="flex-start" alignItems="center">
                                     <Grid container direction="column" item sm={9} justify="flex-start" alignItems="flex-start">
                                         <Grid container className="title" direction="column" justify="flex-start" alignItems="flex-start">
-                                            <span>Join us</span>
-                                            <span>in this journey</span>
+                                            {/* <span>Join us</span>
+                                            <span>in this journey</span> */}
+                                            <Box pt={4}>
+                                                <span>Join us</span>
+                                            </Box>
+                                            <Box>
+                                                <span>in this journey</span>
+                                            </Box>
                                         </Grid>
                                         <Grid container className="paragraph" direction="column" justify="flex-start" alignItems="flex-start">
-                                            Coming soon
-                                </Grid>
+                                            <Box pt={2}>Coming soon</Box>
+                                        </Grid>
                                     </Grid>
                                 </Grid>
 
@@ -306,59 +308,129 @@ const Loginpage = () => {
                         </StyledLeftGrid>
 
                         <StyledRightGrid container item sm={4} direction="column" justify="flex-start" alignItems="center">
-                            <Grid container item sm={8} direction="column" justify="center" alignItems="center">
-                                <Grid container
-                                    direction="column"
-                                    justify="center"
-                                    alignItems="center">
-                                    <Grid container>
-                                        <input
-                                            type="text"
-                                            className="textFields"
-                                            id="name"
-                                            autoComplete="off"
-                                            name="fullname"
-                                            value={data.fullname}
-                                            onChange={handleInputChange}
-                                            placeholder="Name"
-                                        />
-                                    </Grid>
-                                    <Grid container>
-                                        <input
-                                            type="phone"
-                                            className="textFields"
-                                            id="mobileNumber"
-                                            autoComplete="off"
-                                            name="phone"
-                                            value={data.phone}
-                                            onChange={handleInputChange}
-                                            placeholder="Mobile Number"
-                                        />
-                                    </Grid>
-                                    <Grid container>
-                                        <input
-                                            type="email"
-                                            className="textFields"
-                                            id="email"
-                                            autoComplete="off"
-                                            name="email"
-                                            value={data.email}
-                                            onChange={handleInputChange}
-                                            placeholder="E-mail"
-                                        />
-                                    </Grid>
-                                    <Grid container>
-                                        <Button
-                                            className="Styled-on-registered"
-                                            variant="outlined"
-                                            type="submit"
-                                            onClick={handleRegisterClick}>
-                                            Register
+                            {
+                                selectUserType == 'client' ? (
+                                    <Grid id="client" container item sm={8} direction="column" justify="center" alignItems="center">
+                                        <Grid container
+                                            direction="column"
+                                            justify="center"
+                                            alignItems="center">
+                                            <Grid container>
+                                                <input
+                                                    type="text"
+                                                    className="textFields"
+                                                    id="name"
+                                                    autoComplete="off"
+                                                    name="fullname"
+                                                    value={data.fullname}
+                                                    onChange={handleInputChange}
+                                                    placeholder="Name"
+                                                />
+                                            </Grid>
+                                            <Grid container>
+                                                <input
+                                                    type="phone"
+                                                    className="textFields"
+                                                    id="mobileNumber"
+                                                    autoComplete="off"
+                                                    name="phone"
+                                                    value={data.phone}
+                                                    onChange={handleInputChange}
+                                                    placeholder="Mobile Number"
+                                                />
+                                            </Grid>
+                                            <Grid container>
+                                                <input
+                                                    type="email"
+                                                    className="textFields"
+                                                    id="email"
+                                                    autoComplete="off"
+                                                    name="email"
+                                                    value={data.email}
+                                                    onChange={handleInputChange}
+                                                    placeholder="E-mail"
+                                                />
+                                            </Grid>
+                                            <Grid container>
+                                                <Button
+                                                    className="Styled-on-registered"
+                                                    variant="outlined"
+                                                    type="submit"
+                                                    onClick={handleRegisterClick}>
+                                                    Register
                                     </Button>
-                                        {registerButtonStatus && <Registered setModalIsOpen={setRegisterButtonStatus} modalIsOpen={registerButtonStatus} />}
+                                                {registerButtonStatus && <Registered setModalIsOpen={setRegisterButtonStatus} modalIsOpen={registerButtonStatus} />}
+                                            </Grid>
+                                        </Grid>
                                     </Grid>
-                                </Grid>
-                            </Grid>
+                                ) : (
+                                        <Grid id="professional" container item sm={8} direction="column" justify="center" alignItems="center">
+                                            <Grid container
+                                                direction="column"
+                                                justify="center"
+                                                alignItems="center">
+                                                <Grid container>
+                                                    <input
+                                                        type="text"
+                                                        className="textFields"
+                                                        id="name"
+                                                        autoComplete="off"
+                                                        name="fullname"
+                                                        value={data.fullname}
+                                                        onChange={handleInputChange}
+                                                        placeholder="Name"
+                                                    />
+                                                </Grid>
+                                                <Grid container>
+                                                    <input
+                                                        type="phone"
+                                                        className="textFields"
+                                                        id="mobileNumber"
+                                                        autoComplete="off"
+                                                        name="phone"
+                                                        value={data.phone}
+                                                        onChange={handleInputChange}
+                                                        placeholder="Mobile Number"
+                                                    />
+                                                </Grid>
+                                                <Grid container>
+                                                    <input
+                                                        type="email"
+                                                        className="textFields"
+                                                        id="email"
+                                                        autoComplete="off"
+                                                        name="email"
+                                                        value={data.email}
+                                                        onChange={handleInputChange}
+                                                        placeholder="E-mail"
+                                                    />
+                                                </Grid>
+                                                <Grid container>
+                                                    <input
+                                                        type="text"
+                                                        className="textFields"
+                                                        id="professional"
+                                                        autoComplete="off"
+                                                        name="professional"
+                                                        value={data.professional}
+                                                        onChange={handleInputChange}
+                                                        placeholder="Professional"
+                                                    />
+                                                </Grid>
+                                                <Grid container>
+                                                    <Button
+                                                        className="Styled-on-registered"
+                                                        variant="outlined"
+                                                        type="submit"
+                                                        onClick={handleRegisterClick}>
+                                                        Register
+                                                        </Button>
+                                                    {registerButtonStatus && <Registered setModalIsOpen={setRegisterButtonStatus} modalIsOpen={registerButtonStatus} />}
+                                                </Grid>
+                                            </Grid>
+                                        </Grid>
+                                    )
+                            }
                         </StyledRightGrid>
                     </Grid>
                 )

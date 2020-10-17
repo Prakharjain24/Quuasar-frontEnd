@@ -21,13 +21,13 @@ export const StyledHeaderMobile = styled(Grid)`
 export const StyledTitleMobile = styled(Grid)`
     height: 21vh;
     .title1{
-        margin-left: 33px;
+        // margin-left: 33px;
         font-weight: bold;
         color: #283479;
         font-size: 21px;
         }
     .paragraph{
-        margin-left: 33px;
+        // margin-left: 33px;
         font-weight: bold;
         color: #29ABE2;
         padding-top: 11px;
@@ -173,7 +173,6 @@ export const StyledLeftGrid = styled(Grid)`
 
 export const StyledHeaderLeftGrid = styled(Grid)`
     height: 80px;
-
     .brandLogo{
         width: 160px;
         height: 25px;
@@ -182,18 +181,17 @@ export const StyledHeaderLeftGrid = styled(Grid)`
 
 export const StyledContentLeftGrid = styled(Grid)`
     height: 87%;
-
     .title{
         font-weight: 600;
         color: #283479;
         font-size: 29px;
-        padding-top: 30px;
+        // padding-top: 30px;
     }
     .paragraph{
         font-weight: 300;
         color: #29ABE2;
         font-size: 63px;
-        padding-top: 20px;
+        // padding-top: 20px;
     }
     .Styled-on-button{
         width: 250px;

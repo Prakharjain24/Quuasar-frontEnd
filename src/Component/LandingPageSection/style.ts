@@ -49,7 +49,7 @@ width: 100%;
 }
 .paragraph{
     color: #fff;
-    font-size: 20px;
+    font-size: 18px;
     padding-top: 30px;
 }
 .Styled-on-button{

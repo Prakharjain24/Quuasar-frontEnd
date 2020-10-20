@@ -22,14 +22,14 @@ const FooterSection = () => {
                         <Grid container item xs={6} direction="column" justify="flex-start" alignItems="center">
                             <Grid className="footerText" direction="row" justify="flex-start">Connect to us with</Grid>
                             <Grid direction="row" justify="flex-start">
-                                <img className="facebook-icon" src={facebookicon} alt="facebookicon" />
+                                <a href="https://www.facebook.com/Quuasar-100779975153572/?modal=admin_todo_tour"><img className="facebook-icon" src={facebookicon} alt="facebookicon" /></a>
                                 <img className="linkedin-icon" src={linkedinicon} alt="linkedinicon" />
-                                <img className="insta-icon" src={instaicon} alt="instaicon" />
+                                <a href="https://www.instagram.com/quuasar_/?hl=en"><img className="insta-icon" src={instaicon} alt="instaicon" /></a>
                                 <img className="twitter-icon" src={twittericon} alt="twittericon" />
                             </Grid>
                         </Grid>
                         <Grid container item xs={6} direction="row" justify="flex-end" alignItems="center">
-                            <img className="logoBottom" src={WhiteHorizontalLetterLogo} alt="BrandLogo" />
+                            <NavLink to="/"><img className="logoBottom" src={WhiteHorizontalLetterLogo} alt="BrandLogo" /></NavLink>
                         </Grid>
                     </StyledFooterMobile>
                 </>
@@ -40,9 +40,9 @@ const FooterSection = () => {
                                 <Grid container direction="column" justify="flex-start">
                                     <Grid item sm={4} className="footerText">Connect to us with</Grid>
                                     <Grid container direction="row" wrap="nowrap" justify="space-between" item sm={2}>
-                                        <img className="socialSitesIcon" src={facebookicon} alt="facebookicon" />
+                                        <a href="https://www.facebook.com/Quuasar-100779975153572/?modal=admin_todo_tour"><img className="socialSitesIcon" src={facebookicon} alt="facebookicon" /></a>
                                         <img className="socialSitesIcon" src={linkedinicon} alt="linkedinicon" />
-                                        <img className="socialSitesIcon" src={instaicon} alt="instaicon" />
+                                        <a href="https://www.instagram.com/quuasar_/?hl=en"><img className="socialSitesIcon" src={instaicon} alt="instaicon" /></a>
                                         <img className="socialSitesIcon" src={twittericon} alt="twittericon" />
                                     </Grid>
                                 </Grid>

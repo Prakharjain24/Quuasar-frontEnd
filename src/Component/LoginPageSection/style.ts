@@ -113,8 +113,7 @@ export const StyledInputMobile = styled(Grid)`
 `;
 
 export const StyledImageMobile = styled(Grid)`
-height: 45vh;
-// background-color: grey; 
+    height: 30vh;
 `;
 
 export const StyledFooterMobile = styled(Grid)`
@@ -260,6 +259,10 @@ export const StyledRightGrid = styled(Grid)`
 
 ////////////////// Registered css /////////////////////
 
+export const StyledModalPopUpWrapper = styled(Grid)`
+    z-index: 1000;
+`
+
 export const StyledModalPopUp = styled(Grid)`
 height: 100%;
 font-family: Montserrat, sans-serif;
@@ -301,8 +304,4 @@ font-weight: 600;
      width: 130px;
      height: 125px;
  }
-//  .checkoutImg-mob{
-//     width: 25px;
-//     height: 25px;
-// }
-`;
+ `;

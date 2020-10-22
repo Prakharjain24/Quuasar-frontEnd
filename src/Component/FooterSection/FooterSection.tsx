@@ -20,11 +20,11 @@ const FooterSection = () => {
                 ? (<>
                     <StyledFooterMobile container direction="column" justify="center" className="footerbgMB">
                         <Grid container item xs={6} direction="column" justify="flex-start" alignItems="center">
-                            <Grid className="footerText" direction="row" justify="flex-start">Connect to us with</Grid>
-                            <Grid direction="row" justify="flex-start">
-                                <a href="https://www.facebook.com/Quuasar-100779975153572/?modal=admin_todo_tour"><img className="facebook-icon" src={facebookicon} alt="facebookicon" /></a>
+                            <Grid container className="footerText" direction="row" justify="flex-start">Connect to us with</Grid>
+                            <Grid container direction="row" justify="flex-start">
+                                <a href="https://www.facebook.com/Quuasar-100779975153572/?modal=admin_todo_tour" className="noSelect"><img className="facebook-icon" src={facebookicon} alt="facebookicon" /></a>
                                 <img className="linkedin-icon" src={linkedinicon} alt="linkedinicon" />
-                                <a href="https://www.instagram.com/quuasar_/?hl=en"><img className="insta-icon" src={instaicon} alt="instaicon" /></a>
+                                <a href="https://www.instagram.com/quuasar_/?hl=en" className="noSelect"><img className="insta-icon" src={instaicon} alt="instaicon" /></a>
                                 <img className="twitter-icon" src={twittericon} alt="twittericon" />
                             </Grid>
                         </Grid>
@@ -40,9 +40,9 @@ const FooterSection = () => {
                                 <Grid container direction="column" justify="flex-start">
                                     <Grid item sm={4} className="footerText">Connect to us with</Grid>
                                     <Grid container direction="row" wrap="nowrap" justify="space-between" item sm={2}>
-                                        <a href="https://www.facebook.com/Quuasar-100779975153572/?modal=admin_todo_tour"><img className="socialSitesIcon" src={facebookicon} alt="facebookicon" /></a>
+                                        <a href="https://www.facebook.com/Quuasar-100779975153572/?modal=admin_todo_tour" className="noSelect"><img className="socialSitesIcon" src={facebookicon} alt="facebookicon" /></a>
                                         <img className="socialSitesIcon" src={linkedinicon} alt="linkedinicon" />
-                                        <a href="https://www.instagram.com/quuasar_/?hl=en"><img className="socialSitesIcon" src={instaicon} alt="instaicon" /></a>
+                                        <a href="https://www.instagram.com/quuasar_/?hl=en" className="noSelect"><img className="socialSitesIcon" src={instaicon} alt="instaicon" /></a>
                                         <img className="socialSitesIcon" src={twittericon} alt="twittericon" />
                                     </Grid>
                                 </Grid>

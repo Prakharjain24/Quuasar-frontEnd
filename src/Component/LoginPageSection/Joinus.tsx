@@ -23,6 +23,14 @@ const StyledModal = styled(Grid)`
         background-color: rgb(13, 39, 103);
         color: rgb(255, 255, 255);
         text-decoration: none;
+        
+    }
+    .Styled-joinus-button:hover {
+        background-color: #0D2767;
+        color: #fff;
+    }
+    .noSelect{
+        text-decoration: none;
     }
     .Styled-joinus-btn-mob{
         width: 120px;
@@ -39,10 +47,7 @@ const StyledModal = styled(Grid)`
         color: rgb(255, 255, 255);
         text-decoration: none;
         }
-    .Styled-joinus-button:hover{
-        background-color: #0D2767;
-        color: #fff;
-    }
+    
 `;
 const StyledClientGrid = styled(Grid)`
 .client{
@@ -166,7 +171,7 @@ const Joinus = (props) => {
                                         <Grid container direction="column" justify="center" alignItems="center">
                                             <Grid ><img src={ClientImage} alt="Client Image" className="client" /></Grid>
                                             <Grid container direction="column" justify="center" alignItems="center">
-                                                <NavLink to="/login?select=client">
+                                                <NavLink to="/login?select=client" className="noSelect">
                                                     <Button
                                                         className="Styled-joinus-button"
                                                         variant="outlined"
@@ -181,7 +186,7 @@ const Joinus = (props) => {
                                         <Grid container direction="column" justify="center" alignItems="center">
                                             <Grid ><img src={ProfessionalImage} alt="Client Image" className="professional" /></Grid>
                                             <Grid container direction="column" justify="center" alignItems="center">
-                                                <NavLink to="/login?select=professional" >
+                                                <NavLink to="/login?select=professional" className="noSelect">
                                                     <Button
                                                         className="Styled-joinus-button"
                                                         variant="outlined"

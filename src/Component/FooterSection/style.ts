@@ -43,6 +43,9 @@ width: 100%;
     height: 16px;
     padding-right:23px;
 }
+.noSelect {
+    -webkit-tap-highlight-color: transparent;
+}
 `;
 export const StyledFooter = styled(Grid)`
     background-color: #0D2767;

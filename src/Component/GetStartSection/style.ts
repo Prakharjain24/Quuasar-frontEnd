@@ -11,6 +11,7 @@ export const StyledGetStart = styled(Grid)`
 .get-header-mobile{
     padding-top: 10px;
     font-size: 30px;
+    font-weight: 200;
     color:#0D2767;
 }
 .get-btn-mobile{

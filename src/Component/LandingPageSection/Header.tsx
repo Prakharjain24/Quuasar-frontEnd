@@ -35,7 +35,7 @@ const Header = () => {
                                 <NavLink to="/"><img className="Styled-Brand-Logo" src={WhiteHorizontalLetterLogo} alt="brandLogo" /></NavLink>
                             </Grid>
                             <Grid container item sm={9} alignItems="center" justify="flex-end">
-                                <Grid className="joinUsLink"><span className="joinus-border" onClick={joinusContent} >Join us</span></Grid>
+                                <Grid className="joinUsLink hover"><span className="joinus-border" onClick={joinusContent} >Join us</span></Grid>
                                 {joinus && <Joinus setModalIsOpen={setJoinus} modalIsOpen={joinus} />}
                             </Grid>
                         </Grid>

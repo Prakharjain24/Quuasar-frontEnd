@@ -29,6 +29,11 @@ import {
 } from './style';
 import { Tabform } from './Form/Tabform';
 
+export enum userType {
+    Client = 1,
+    Professional = 2
+}
+
 function useQuery() {
     return new URLSearchParams(useLocation().search);
 }
@@ -38,10 +43,12 @@ const Loginpage = () => {
     const matches = useMediaQuery(theme.breakpoints.down('xs'));
 
     let query = useQuery();
-    let user = query.get('select');
-    if (user == null) {
-        user = 'client';
-    }
+    let selectedUser = query.get('select');
+    let user;
+
+    if (selectedUser === 'professional') user = userType.Professional
+    else user = userType.Client;
+
     const [selectUserType, setSelectUserType] = useState(user);
     const [registerButtonStatus, setRegisterButtonStatus] = useState(false);
 
@@ -68,12 +75,10 @@ const Loginpage = () => {
 
     const handleButtonClick = (user) => {
         switch (user) {
-            case 'client': {
-                console.log('hello', selectUserType);
+            case userType.Client: {
                 var btn = document.getElementById("clientid");
                 var btn1 = document.getElementById("professionalid");
                 if (btn != null && btn1 != null) {
-                    console.log('hello if condition ', selectUserType);
                     btn.style.backgroundColor = '#0D2767';
                     btn.style.color = '#fff';
                     btn1.style.backgroundColor = "transparent";
@@ -81,12 +86,10 @@ const Loginpage = () => {
                 }
                 break;
             }
-            case 'professional': {
-                console.log('hello', selectUserType);
+            case userType.Professional: {
                 var btn = document.getElementById("professionalid");
                 var btn1 = document.getElementById("clientid");
                 if (btn != null && btn1 != null) {
-                    console.log('hello if condition ', selectUserType);
                     btn.style.backgroundColor = '#0D2767';
                     btn.style.color = '#fff';
                     btn1.style.backgroundColor = "transparent";
@@ -98,12 +101,12 @@ const Loginpage = () => {
     }
 
     const clientContent = () => {
-        setSelectUserType('client');
-        handleButtonClick('client');
+        setSelectUserType(userType.Client);
+        handleButtonClick(userType.Client);
     }
     const professionalContent = () => {
-        setSelectUserType('professional');
-        handleButtonClick('professional');
+        setSelectUserType(userType.Professional);
+        handleButtonClick(userType.Professional);
     }
 
     const handleRegisterClick = () => {
@@ -117,7 +120,7 @@ const Loginpage = () => {
             {matches ? (
                 <>
                     <StyledMobileView>
-                        <StyledHeaderMobile container xs={12} direction="row">
+                        <StyledHeaderMobile container item xs={12} direction="row">
                             <Grid container item xs={6} alignItems="center" justify="center">
                                 <NavLink to="/"><img className="Styled-Brand-Logo" src={BlueHorizontalLetterLogo} alt="brandLogo" /></NavLink>
                             </Grid>
@@ -136,8 +139,13 @@ const Loginpage = () => {
                             </Grid>
                         </StyledTitleMobile>
 
-                        <Tabform handleRegisterButtonClick={handleRegisterClick} handleRegisterInputChange={handleInputChange} inputData={data} />
+                        <Tabform
+                            inputData={data}
+                            selectedUserType={selectUserType}
+                            handleRegisterButtonClick={handleRegisterClick}
+                            handleRegisterInputChange={handleInputChange} />
                         {registerButtonStatus && <Registered setModalIsOpen={setRegisterButtonStatus} modalIsOpen={registerButtonStatus} />}
+
                         <StyledImageMobile container item direction="column" justify="flex-end" alignItems="center">
                             <Grid container item direction="column" justify="center" alignItems="center">
                                 <img src={painting} alt="painting-mob" srcSet={`${painting} 1300w`}></img>
@@ -146,11 +154,11 @@ const Loginpage = () => {
 
                         <StyledFooterMobile container direction="column" justify="center" className="footerbgMB">
                             <Grid container item xs={6} direction="column" justify="flex-start" alignItems="center">
-                                <Grid className="footerText" direction="row" justify="flex-start">Connect to us with</Grid>
-                                <Grid direction="row" justify="flex-start">
-                                    <img className="facebook-icon" src={facebookicon} alt="facebookicon" />
+                                <Grid container className="footerText" direction="row" justify="flex-start">Connect to us with</Grid>
+                                <Grid container direction="row" justify="flex-start">
+                                    <a href="https://www.facebook.com/Quuasar-100779975153572/?modal=admin_todo_tour" className="noSelect"><img className="facebook-icon" src={facebookicon} alt="facebookicon" /></a>
                                     <img className="linkedin-icon" src={linkedinicon} alt="linkedinicon" />
-                                    <img className="insta-icon" src={instaicon} alt="instaicon" />
+                                    <a href="https://www.instagram.com/quuasar_/?hl=en" className="noSelect"><img className="insta-icon" src={instaicon} alt="instaicon" /></a>
                                     <img className="twitter-icon" src={twittericon} alt="twittericon" />
                                 </Grid>
                             </Grid>

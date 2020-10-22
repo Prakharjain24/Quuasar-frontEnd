@@ -3,7 +3,7 @@ import { Button, Grid } from '@material-ui/core';
 import styled from "@emotion/styled";
 import './style.css';
 import './tabs.css';
-
+import { userType } from '../Loginpage';
 
 const StyledTabindex = styled(Grid)`
         .inputField{
@@ -50,7 +50,10 @@ const StyledTabindex = styled(Grid)`
                 padding-left: 15px;
             }
         .listElement {
-            z-index: 100;
+            z-index: 100;            
+        }
+        .noSelect {
+            -webkit-tap-highlight-color: transparent;
         }
         .spanElement {
             background: #283479;
@@ -61,8 +64,10 @@ const StyledTabindex = styled(Grid)`
         }
 `;
 
+
+
 export const Tabform = (props) => {
-    const [selectedTab, setSelectedTab] = React.useState(1);
+    const [selectedTab, setSelectedTab] = React.useState<number>(props.selectedUserType);
     return (
         <React.Fragment>
             <StyledTabindex>
@@ -72,32 +77,36 @@ export const Tabform = (props) => {
                             <div className="tabs tabs-style-shape">
                                 <nav>
                                     <ul>
-                                        <li className={selectedTab === 1 && 'listElement'}>
-                                            <a href="javascript:;" onClick={e => {
-                                                e.preventDefault();
-                                                setSelectedTab(1);
-                                            }} >
+                                        <li className={selectedTab === userType.Client ? 'listElement' : ''}>
+                                            <a href="javascript:;"
+                                                className="noSelect"
+                                                onClick={e => {
+                                                    e.preventDefault();
+                                                    setSelectedTab(1);
+                                                }} >
                                                 <svg viewBox="10 0 200 60" preserveAspectRatio="none" className="marginLeft">
                                                     <path id="tabshape" d="M80,60C2,55.5,73.417,0,0,0v60H80z" />
                                                 </svg>
-                                                <span className={selectedTab === 1 && 'spanElement'}>Customer</span>
+                                                <span className={selectedTab === userType.Client ? 'spanElement' : ''}>Customer</span>
                                             </a>
                                         </li>
-                                        <li className={selectedTab === 2 && 'listElement'}>
-                                            <a href="javascript:;" onClick={e => {
-                                                e.preventDefault();
-                                                setSelectedTab(2);
-                                            }}>
+                                        <li className={selectedTab === userType.Professional ? 'listElement' : ''}>
+                                            <a href="javascript:;"
+                                                className="noSelect"
+                                                onClick={e => {
+                                                    e.preventDefault();
+                                                    setSelectedTab(2);
+                                                }}>
                                                 <svg viewBox="10 0 200 60" preserveAspectRatio="none" className="marginLeft">
                                                     <path id="tabshape" d="M80,60C2,55.5,73.417,0,0,0v60H80z" />
                                                 </svg>
-                                                <span className={selectedTab === 2 && 'spanElement'}>Professional</span>
+                                                <span className={selectedTab === 2 ? 'spanElement' : ''}>Professional</span>
                                             </a>
                                         </li>
                                     </ul>
                                 </nav>
                                 <Grid className="content-wrap" >
-                                    {selectedTab === 1
+                                    {selectedTab === userType.Client
                                         ? <Grid container justify="center">
                                             <input
                                                 className="inputField"

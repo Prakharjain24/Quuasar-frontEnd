@@ -20,12 +20,26 @@ height: 80px;
     cursor: pointer;
 }
 
-.joinUsLink:hover{
-    color: #fff;
-    border-bottom: 2px solid #fff;
+.hover{
+    position: relative;
 }
-.joinus-border:hover{
-    border-bottom: 2px solid #fff;
+
+.hover:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #FFF;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
+}
+
+.hover:hover:before {
+    visibility: visible;
+    transform: scaleX(1);
 }
 `;
  

@@ -156,6 +156,9 @@ width: 100%;
     height: 16px;
     padding-right:23px;
 }
+.noSelect {
+    -webkit-tap-highlight-color: transparent;
+}
 `;
 
 //////////////// Loginpage //////////////////////

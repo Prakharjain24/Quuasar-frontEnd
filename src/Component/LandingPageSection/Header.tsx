@@ -30,6 +30,7 @@ const Header = () => {
                         </Grid>
                     </>)
                     : (<>
+                    <h2 id='helloText2'>hello World</h2>
                         <Grid container direction="row" item sm={10} wrap="nowrap" justify="center" alignItems="center">
                             <Grid container item sm={3} alignItems="center" justify="flex-start">
                                 <NavLink to="/"><img className="Styled-Brand-Logo" src={WhiteHorizontalLetterLogo} alt="brandLogo" /></NavLink>

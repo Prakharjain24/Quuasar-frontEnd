@@ -35,10 +35,12 @@ const FooterSection = () => {
                 </>
                 ) : (
                     <StyledFooter container item direction="row" wrap="nowrap" justify="center" alignItems="center">
+                        <h1 id='helloText'>hello</h1>
+                        <h2 id='helloText2'>hello World</h2>
                         <Grid container direction="row" item sm={10} wrap="nowrap">
                             <Grid container direction="column" justify="flex-start" alignItems="center" item sm={9}>
                                 <Grid container direction="column" justify="flex-start">
-                                    <Grid item sm={4} className="footerText">Connect to us with</Grid>
+                                    <Grid item sm={4} id='connectID' className="footerText">Connect to us with</Grid>
                                     <Grid container direction="row" wrap="nowrap" justify="space-between" item sm={2}>
                                         <a href="https://www.facebook.com/Quuasar-100779975153572/?modal=admin_todo_tour" className="noSelect"><img className="socialSitesIcon" src={facebookicon} alt="facebookicon" /></a>
                                         <img className="socialSitesIcon" src={linkedinicon} alt="linkedinicon" />
